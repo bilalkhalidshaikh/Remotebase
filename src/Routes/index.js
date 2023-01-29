@@ -4,7 +4,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import {Home,Hire,ThankYou} from "../Pages"
+import {Home,Hire,ThankYou,ApplyForJob} from "../Pages"
 import {AppBar} from "../Components"
 
 const router = createBrowserRouter([
@@ -19,7 +19,11 @@ const router = createBrowserRouter([
   {
     path: '/thankyou',
     element: <ThankYou/>
-  }
+  },
+  {
+    path: '/applyforjob',
+    element: <ApplyForJob/>
+  },
 ]);
 
 export default function Routes(){

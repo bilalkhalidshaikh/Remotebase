@@ -84,7 +84,7 @@ export default function StartSchedule() {
             }}
           >
             <Typography component="h1" variant="h5">
-            Last step! set an easy schedule call with our remotebase team ahead.
+            Last step! set an easy schedule call with our Luts team ahead.
             </Typography>
           <Box>
             <CustomizeDayPicker/>

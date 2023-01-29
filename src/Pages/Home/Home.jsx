@@ -394,10 +394,12 @@ function Home() {
                     >
                       Looking for jobs instead?{/* */}
                       <a
-                        href="https://developers.remotebase.com"
                         className="styles__HeroTextLink-sc-1osk9yq-9 bXPueP"
+                        style={{color:'#3B52EF'}}
                       >
+                      <Link to="/applyforjob" style={{color:'#3B52EF'}}>
                         Apply for Jobs
+                      </Link>
                       </a>
                     </div>
                   </div>
@@ -2749,10 +2751,11 @@ function Home() {
                     <div className="styles__ApplyJob-sc-11thlrk-14 fRlJIv">
                       Looking for jobs instead?{/* */}
                       <a
-                        href="https://developers.remotebase.com"
                         className="styles__ApplyJobLink-sc-11thlrk-15 XTCZO"
                       >
+                         <Link to="/applyforjob" style={{color:'#3B52EF'}}>
                         Apply for Jobs
+                      </Link>
                       </a>
                     </div>
                   </div>
@@ -3988,12 +3991,11 @@ function Home() {
                       data-aos-delay={900}
                     >
                       <a
-                        href="https://developers.remotebase.com"
                         className="styles__JobBtn-sc-1bujfel-10 dOrGkZ"
                       >
-                        <Link style={{ color: "white" }} to="/talent">
-                          Apply for Jobs
-                        </Link>
+                    <Link to="/applyforjob" style={{color:'#3B52EF'}}>
+                        Apply for Jobs
+                      </Link>
                         <span>
                           <svg
                             width={20}
@@ -4357,10 +4359,11 @@ function Home() {
                     <div className="styles__ContactUsText-sc-1617iz2-8 dULAyW">
                       Looking for jobs instead?{/* */}
                       <a
-                        href="https://developers.remotebase.com"
                         className="styles__ContactUsTextLink-sc-1617iz2-9 cAxViF"
                       >
+                  <Link to="/applyforjob" style={{color:'#3B52EF'}}>
                         Apply for Jobs
+                      </Link>
                       </a>
                     </div>
                   </div>

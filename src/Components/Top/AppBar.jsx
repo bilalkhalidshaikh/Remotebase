@@ -1,15 +1,16 @@
-import React from 'react'
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import React from "react";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import { Outlet, Link } from "react-router-dom";
 
 function CollapsibleExample() {
   return (
-    <Navbar collapseOnSelect expand="lg" >
-      <Container className='nav'>
+    <Navbar collapseOnSelect expand="lg">
+      <Container className="nav">
         <Navbar.Brand href="">
-            <img src="https://remotebase.com/_next/image?url=%2Fimages%2Frb-logo.png&w=1920&q=100" />
+          <img src="https://remotebase.com/_next/image?url=%2Fimages%2Frb-logo.png&w=1920&q=100" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -31,9 +32,23 @@ function CollapsibleExample() {
             </NavDropdown> */}
           </Nav>
           <Nav>
-            <Nav.Link href="" style={{lineHeight:'32px',marginTop:'12px'}}>Apply as a Developer</Nav.Link>
-            <Nav.Link eventKey={2} href="">
-               <button className='davFMk'>Hire Developer</button>
+            {/* <Nav.Link style={{  }}> */}
+            <Link
+              style={{
+                textDecoration: "none",
+                color: "#000",
+                lineHeight: "32px",
+                marginTop: "12px",
+              }}
+              to="/applyforjob"
+            >
+              Apply as a Developer
+              {/* </Nav.Link> */}
+            </Link>
+            <Nav.Link eventKey={2}>
+              <Link to={"/start"} sx={{ color: "#fff" }}>
+                <button className="davFMk">Hire Developer</button>
+              </Link>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
@@ -42,12 +57,10 @@ function CollapsibleExample() {
   );
 }
 
-
 export default function AppBar() {
   return (
     <div>
-        <CollapsibleExample/>   
+      <CollapsibleExample />
     </div>
-  )
+  );
 }
-

@@ -234,6 +234,7 @@ function MultiActionAreaCard({ src, title, style, onClick }) {
       sx={{ maxWidth: 455, width: "100%", height: "100vh", maxHeight: 255 }}
       onClick={onClick}
       style={style}
+      className={"c-cards"}
     >
       <CardActionArea>
         <CardMedia
@@ -281,41 +282,50 @@ function TextMobileStepper() {
 
   const clickCard = () => {
     setSelCard((current) => !current);
+    handleNext()
+  
   };
   const [selCardOne, setSelCardOne] = useState(false);
 
   const clickCardOne = () => {
     setSelCardOne((current) => !current);
+    handleNext()
   };
   const [selCardTwo, setSelCardTwo] = useState(false);
 
   const clickCardTwo = () => {
     setSelCardTwo((current) => !current);
+    handleNext()
   };
   const [selCardThree, setSelCardThree] = useState(false);
 
   const clickCardThree = () => {
     setSelCardThree((current) => !current);
+    handleNext()
   };
   const [selsCard, setSelsCard] = useState(false);
 
   const clicksCard = () => {
     setSelsCard((current) => !current);
+    handleNext()
   };
   const [selsCardOne, setSelsCardOne] = useState(false);
 
   const clicksCardOne = () => {
     setSelsCardOne((current) => !current);
+    handleNext()
   };
   const [selsCardTwo, setSelsCardTwo] = useState(false);
 
   const clicksCardTwo = () => {
     setSelsCardTwo((current) => !current);
+    handleNext()
   };
   const [selsCardThree, setSelsCardThree] = useState(false);
 
   const clicksCardThree = () => {
     setSelsCardThree((current) => !current);
+    handleNext()
   };
 
   const [isActive, setIsActive] = useState(false);
@@ -343,6 +353,7 @@ function TextMobileStepper() {
   const handleClick = () => {
     // 👇️ toggle
     setIsActive((current) => !current);
+
 
     // 👇️ or set to true
     // setIsActive(true);
@@ -772,7 +783,7 @@ function TextMobileStepper() {
                     style={{
                       border: selCard ? "1px solid #ccc" : "",
                       background: selCard ? "#EEF1FC" : "",
-                      textDecoration: selCard ? "overline" : "",
+                      // textDecoration: selCard ? "overline" : "",
                     }}
                     onClick={clickCard}
                   />
@@ -784,7 +795,7 @@ function TextMobileStepper() {
                     style={{
                       border: selCardOne ? "1px solid #ccc" : "",
                       background: selCardOne ? "#EEF1FC" : "",
-                      textDecoration: selCardOne ? "overline" : "",
+                      // textDecoration: selCardOne ? "overline" : "",
                     }}
                     onClick={clickCardOne}
                   />
@@ -796,7 +807,7 @@ function TextMobileStepper() {
                     style={{
                       border: selCardThree ? "1px solid #ccc" : "",
                       background: selCardThree ? "#EEF1FC" : "",
-                      textDecoration: selCardThree ? "overline" : "",
+                      // textDecoration: selCardThree ? "overline" : "",
                     }}
                     onClick={clickCardThree}
                   />
@@ -808,7 +819,7 @@ function TextMobileStepper() {
                     style={{
                       border: selCardTwo ? "1px solid #ccc" : "",
                       background: selCardTwo ? "#EEF1FC" : "",
-                      textDecoration: selCardTwo ? "overline" : "",
+                      // textDecoration: selCardTwo ? "overline" : "",
                     }}
                     onClick={clickCardTwo}
                   />
@@ -878,7 +889,7 @@ function TextMobileStepper() {
                     style={{
                       border: selsCard ? "1px solid #ccc" : "",
                       background: selsCard ? "#EEF1FC" : "",
-                      textDecoration: selsCard ? "overline" : "",
+                      // textDecoration: selsCard ? "overline" : "",
                     }}
                     onClick={clicksCard}
                   />
@@ -890,7 +901,7 @@ function TextMobileStepper() {
                     style={{
                       border: selsCardOne ? "1px solid #ccc" : "",
                       background: selsCardOne ? "#EEF1FC" : "",
-                      textDecoration: selsCardOne ? "overline" : "",
+                      // textDecoration: selsCardOne ? "overline" : "",
                     }}
                     onClick={clicksCardOne}
                   />
@@ -902,7 +913,7 @@ function TextMobileStepper() {
                     style={{
                       border: selsCardThree ? "1px solid #ccc" : "",
                       background: selsCardThree ? "#EEF1FC" : "",
-                      textDecoration: selsCardThree ? "overline" : "",
+                      // textDecoration: selsCardThree ? "overline" : "",
                     }}
                     onClick={clicksCardThree}
                   />
@@ -938,7 +949,7 @@ function TextMobileStepper() {
       description: (
         <>
           <Box sx={{ pt: 1, width: "100%", margin: "0px auto" }}>
-            <StartSignUp />
+            <StartSignUp handleNext={handleNext}  />
           </Box>
         </>
       ),
