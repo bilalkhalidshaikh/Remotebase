@@ -1,10 +1,31 @@
 html {
   scroll-behavior: smooth;
+
 }
 .App {
   text-align: center;
+  background-color: #FFFBF0 !important;
 }
 
+body{
+  background-color: #FFFBF0 !important;
+}
+
+h1>span{
+  color: #D4305F !important;
+}
+h5>span{
+  color: #D4305F !important;
+}
+h2>span{
+  color: #D4305F !important;
+}
+h3>span{
+  color: #D4305F !important;
+}
+h4>span{
+  color: #D4305F !important;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -57,8 +78,9 @@ html {
   text-align: center;
   letter-spacing: 0.005em;
   color: rgb(255, 255, 255);
-  background-color: rgb(54, 21, 189);
-  border: 1px solid rgb(54, 21, 189);
+  /* background-color: rgb(54, 21, 189); */
+  background-color: #D4305F !important;
+  border: 1px solid #D4305F !important;                        
   border-radius: 100px;
   box-shadow: none;
   text-decoration: none;
@@ -105,7 +127,7 @@ html {
   height: 4.8em;
   border-radius: 50%;
 }
-.testimonials .name{color: blue;}
+.testimonials .name{color: #D4305F;}
 .testimonials .desig{
   font-size: 0.7em;
   padding: 0.5em 0;
@@ -129,7 +151,7 @@ html {
   transition: all 0.5s;
   cursor: pointer;
 }
-.testimonials i:hover{color: blue;}
+.testimonials i:hover{color: #D4305F;}
 .testimonials p{
   max-width: 27em;
   margin: 0 auto;
@@ -137,7 +159,7 @@ html {
 }
 .testimonials button{
   font-size: 1em;
-  background-color: #3615BD;
+  background-color: #D4305F;
   color: white;
   padding: 0.8em 2em;
   border-radius: 2em;
@@ -189,4 +211,9 @@ html {
   min-width: 0;
   height: 55px;
   border: 1px solid #ccc;
+}
+
+.oimg{
+  width: 870;
+  height: 880;
 }

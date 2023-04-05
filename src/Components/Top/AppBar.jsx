@@ -4,13 +4,14 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Outlet, Link } from "react-router-dom";
+import logo from "./../../Images/logo.png";
 
 function CollapsibleExample() {
   return (
-    <Navbar collapseOnSelect expand="lg">
+    <Navbar collapseOnSelect expand="lg" style={{ height: "100px" }}>
       <Container className="nav">
         <Navbar.Brand href="">
-          <img src="https://remotebase.com/_next/image?url=%2Fimages%2Frb-logo.png&w=1920&q=100" />
+          <img src={logo} width={300} height={300} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -39,16 +40,22 @@ function CollapsibleExample() {
                 color: "#000",
                 lineHeight: "32px",
                 marginTop: "12px",
+                cursor:'pointer'
               }}
-              to="/applyforjob"
+              to={"/applyforjob"}
             >
               Apply as a Developer
               {/* </Nav.Link> */}
             </Link>
             <Nav.Link eventKey={2}>
-              <Link to={"/start"} sx={{ color: "#fff" }}>
-                <button className="davFMk">Hire Developer</button>
-              </Link>
+              <button className="davFMk">
+                <Link
+                  to={"/start"}
+                  style={{ color: "#fff", textDecoration: "none" }}
+                >
+                  Hire Developer
+                </Link>
+              </button>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

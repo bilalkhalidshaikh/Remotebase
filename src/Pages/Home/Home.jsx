@@ -1,6 +1,22 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
-import { One, Two, Three, Five, Six, Seven, Four } from "../../Images";
+import {
+  One,
+  Two,
+  Three,
+  Five,
+  Six,
+  Seven,
+  Four,
+  NewOne,
+  NewFour,
+  NewSeven,
+  c1,
+  c2,
+  c3,
+  c4,
+  c5
+} from "../../Images";
 import { Image } from "react-bootstrap";
 import { Stack, Avatar, Typography, Container } from "@mui/material";
 
@@ -146,7 +162,10 @@ function Home() {
           &gt;&lt;/iframe &gt;
         </noscript>
         <div id="__next">
-          <div className="styles__CenteredLayoutStyled-sc-12py35t-0 geSGgE">
+          <div
+            className="styles__CenteredLayoutStyled-sc-12py35t-0 geSGgE"
+            style={{ background: "#FFFBF0 !important" }}
+          >
             <div className="styles__HeaderStyled-sc-64huf-0 eIWoYW">
               {/* <nav
             class="styles__NavbarWrapper-sc-64huf-1 bnuXJF navbar navbar-expand-xl navbar-light"
@@ -170,7 +189,7 @@ function Home() {
                       padding: 0;
                       position: absolute;
                       top: 0;
-                      left: 0;
+                      left: 0; 
                       bottom: 0;
                       right: 0;
                     "
@@ -284,7 +303,7 @@ function Home() {
             <div
               id="aboutUs"
               className="styles__HeroStyled-sc-1osk9yq-0 jWgSPn"
-              style={{ marginTop: "-80px" }}
+              style={{ marginTop: "-80px", background: "#FFFBF0" }}
             >
               <div className="styles__Container-sc-1osk9yq-1 iHYlpB">
                 <div className="styles__HeroMain-sc-1osk9yq-2 hCAEVu">
@@ -353,7 +372,11 @@ function Home() {
                       <a
                         href="/start"
                         className="styles__HeroBtn-sc-1osk9yq-7 bETaSE"
-                        style={{ color: "#fff", padding: "20px 40px" }}
+                        style={{
+                          color: "#fff",
+                          padding: "20px 40px",
+                          background: "#D4305F",
+                        }}
                       >
                         <Link to={"/start"} style={{ color: "#fff" }}>
                           Hire Now
@@ -395,11 +418,11 @@ function Home() {
                       Looking for jobs instead?{/* */}
                       <a
                         className="styles__HeroTextLink-sc-1osk9yq-9 bXPueP"
-                        style={{color:'#3B52EF'}}
+                        style={{ color: "#D4305F" }}
                       >
-                      <Link to="/applyforjob" style={{color:'#3B52EF'}}>
-                        Apply for Jobs
-                      </Link>
+                        <Link to="/applyforjob" style={{ color: "#D4305F" }}>
+                          Apply for Jobs
+                        </Link>
                       </a>
                     </div>
                   </div>
@@ -462,12 +485,14 @@ function Home() {
                                 /> */}
                           <Image
                             alt="Java developer remotely at Qume"
-                            // src="https://remotebase.com/_next/image?url=%2Fimages%2Foverview%2Fhero-female.png&w=1920&q=75"
-                            src={One}
+                            src={NewOne}
                             decoding="async"
                             data-nimg="fill"
-                            width={480}
-                            height={680}
+                            style={{ width: "880px", height: "900px" }}
+                            className="oimg"
+                            // width={480}
+                            // height={680}
+                            // src="https://remotebase.com/_next/image?url=%2Fimages%2Foverview%2Fhero-female.png&w=1920&q=75"
                             // style={{marginRIght:'40px',width:'480px',height:'480px'}}
                             // style={{
                             //   marginLeft:'40px',
@@ -541,7 +566,10 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="styles__CompaniesStyled-sc-1i1m5qf-0 gZnaVj">
+            <div
+              className="styles__CompaniesStyled-sc-1i1m5qf-0 gZnaVj"
+              style={{ background: "#fa86a7 !important" }}
+            >
               <div className="styles__Container-sc-1i1m5qf-1 flRqJR">
                 <h5
                   className="styles__CompaniesHeading-sc-1i1m5qf-2 kiMlOW aos-item"
@@ -579,7 +607,7 @@ function Home() {
                       >
                         <img
                           alt="Officetour Logo"
-                          src="https://remotebase.com/images/overview/oficetour.svg"
+                          src={c1}
                           decoding="async"
                           data-nimg="fill"
                           style={{
@@ -651,7 +679,7 @@ function Home() {
                       >
                         <img
                           alt="Duponstudios Logo"
-                          src="https://remotebase.com/images/overview/duponstudios.svg"
+                          src={c2}
                           decoding="async"
                           data-nimg="fill"
                           style={{
@@ -723,7 +751,7 @@ function Home() {
                       >
                         <img
                           alt="Capbase Logo"
-                          src="https://remotebase.com/images/overview/capbase.svg"
+                          src={c3}
                           decoding="async"
                           data-nimg="fill"
                           style={{
@@ -795,7 +823,7 @@ function Home() {
                       >
                         <img
                           alt="Placer Logo"
-                          src="https://remotebase.com/images/overview/placer-logo.svg"
+                          src={c4}
                           decoding="async"
                           data-nimg="fill"
                           style={{
@@ -867,7 +895,7 @@ function Home() {
                       >
                         <img
                           alt="Fireflies Logo"
-                          src="https://remotebase.com/images/overview/fireflies.svg"
+                          src={c5}
                           decoding="async"
                           data-nimg="fill"
                           style={{
@@ -1416,7 +1444,10 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="styles__AboutStyled-sc-snsgg8-0 htOhMv">
+            <div
+              className="styles__AboutStyled-sc-snsgg8-0 htOhMv"
+              style={{ background: "#FFFBF0 !important" }}
+            >
               <div className="styles__Container-sc-snsgg8-1 ldJGvY">
                 <h2
                   className="styles__AboutHeading-sc-snsgg8-2 bhNzmb aos-item"
@@ -1482,12 +1513,15 @@ function Home() {
                       data-aos-delay={950}
                     >
                       <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                        <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                        <div
+                          className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                          style={{ background: "#D4305F" }}
+                        >
                           <svg
                             width={21}
                             height={16}
                             viewBox="0 0 21 16"
-                            fill="none"
+                            fill="#D4305F"
                             xmlns="http://www.w3.org/2000/svg"
                           >
                             <path
@@ -1501,7 +1535,10 @@ function Home() {
                         </p>
                       </div>
                       <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                        <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                        <div
+                          className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                          style={{ background: "#D4305F" }}
+                        >
                           <svg
                             width={21}
                             height={16}
@@ -1520,7 +1557,10 @@ function Home() {
                         </p>
                       </div>
                       <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                        <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                        <div
+                          className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                          style={{ background: "#D4305F" }}
+                        >
                           <svg
                             width={21}
                             height={16}
@@ -1539,7 +1579,10 @@ function Home() {
                         </p>
                       </div>
                       <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                        <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                        <div
+                          className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                          style={{ background: "#D4305F" }}
+                        >
                           <svg
                             width={21}
                             height={16}
@@ -1558,7 +1601,10 @@ function Home() {
                         </p>
                       </div>
                       <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                        <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                        <div
+                          className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                          style={{ background: "#D4305F" }}
+                        >
                           <svg
                             width={21}
                             height={16}
@@ -1660,407 +1706,11 @@ function Home() {
                 </div>
               </div>
             </div>
-            {/* <div className="styles__FeatureStyled-sc-ph09me-0 brRMsa">
-              <div className="styles__Wrapper-sc-ph09me-1 dCduGn">
-                <h2
-                  className="styles__FeatureHeading-sc-ph09me-2 dcLaky aos-item"
-                  data-aos="fade-up"
-                  data-aos-duration={1000}
-                >
-                  <span>Featured</span> On
-                </h2>
-                <div className="styles__FeatureGrid-sc-ph09me-4 flrAjT">
-                  <div
-                    className="styles__FeatureBoxCanvas-sc-ph09me-5 GWqio aos-item"
-                    data-aos="fade-up"
-                    data-aos-duration={1000}
-                    data-aos-delay={400}
-                  >
-                    <a
-                      target="_blank"
-                      href="https://www.forbes.com/sites/davidprosser/2022/10/27/remotebase-raises-21-million-for-engineer-recruitment-network/"
-                      className="styles__FeatureBox-sc-ph09me-6 hehuGy"
-                    >
-                      <div className="styles__FeatureImg-sc-ph09me-7 jdwHtS forbes__img">
-                        <span
-                          style={{
-                            boxSizing: "border-box",
-                            display: "block",
-                            overflow: "hidden",
-                            width: "initial",
-                            height: "initial",
-                            background: "none",
-                            opacity: 1,
-                            border: 0,
-                            margin: 0,
-                            padding: 0,
-                            position: "absolute",
-                            top: 0,
-                            left: 0,
-                            bottom: 0,
-                            right: 0,
-                          }}
-                        >
-                          <img
-                            alt="Forbes Image"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                            decoding="async"
-                            data-nimg="fill"
-                            style={{
-                              position: "absolute",
-                              top: 0,
-                              left: 0,
-                              bottom: 0,
-                              right: 0,
-                              boxSizing: "border-box",
-                              padding: 0,
-                              border: "none",
-                              margin: "auto",
-                              display: "block",
-                              width: 0,
-                              height: 0,
-                              minWidth: "100%",
-                              maxWidth: "100%",
-                              minHeight: "100%",
-                              maxHeight: "100%",
-                            }}
-                          />
-                          <noscript>
-                            &lt;img alt="Forbes Image" sizes="100vw" srcset="
-                            /images/overview/forbes.svg 640w,
-                            /images/overview/forbes.svg 750w,
-                            /images/overview/forbes.svg 828w,
-                            /images/overview/forbes.svg 1080w,
-                            /images/overview/forbes.svg 1200w,
-                            /images/overview/forbes.svg 1920w,
-                            /images/overview/forbes.svg 2048w,
-                            /images/overview/forbes.svg 3840w "
-                            src="/images/overview/forbes.svg" decoding="async"
-                            data-nimg="fill" style=" position: absolute; top: 0;
-                            left: 0; bottom: 0; right: 0; box-sizing:
-                            border-box; padding: 0; border: none; margin: auto;
-                            display: block; width: 0; height: 0; min-width:
-                            100%; max-width: 100%; min-height: 100%; max-height:
-                            100%; " loading="lazy" /&gt;
-                          </noscript>
-                        </span>
-                      </div>
-                    </a>
-                  </div>
-                  <div
-                    className="styles__FeatureBoxCanvas-sc-ph09me-5 GWqio aos-item"
-                    data-aos="fade-up"
-                    data-aos-duration={1000}
-                    data-aos-delay={500}
-                  >
-                    <a
-                      target="_blank"
-                      href="https://www.wsj.com/articles/startups-investors-bet-on-remote-work-future-11667436359?mod=hp_minor_pos6"
-                      className="styles__FeatureBox-sc-ph09me-6 hehuGy"
-                    >
-                      <div className="styles__FeatureImg-sc-ph09me-7 jdwHtS wsj__img">
-                        <span
-                          style={{
-                            boxSizing: "border-box",
-                            display: "block",
-                            overflow: "hidden",
-                            width: "initial",
-                            height: "initial",
-                            background: "none",
-                            opacity: 1,
-                            border: 0,
-                            margin: 0,
-                            padding: 0,
-                            position: "absolute",
-                            top: 0,
-                            left: 0,
-                            bottom: 0,
-                            right: 0,
-                          }}
-                        >
-                          <img
-                            alt="WSJ Image"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                            decoding="async"
-                            data-nimg="fill"
-                            style={{
-                              position: "absolute",
-                              top: 0,
-                              left: 0,
-                              bottom: 0,
-                              right: 0,
-                              boxSizing: "border-box",
-                              padding: 0,
-                              border: "none",
-                              margin: "auto",
-                              display: "block",
-                              width: 0,
-                              height: 0,
-                              minWidth: "100%",
-                              maxWidth: "100%",
-                              minHeight: "100%",
-                              maxHeight: "100%",
-                            }}
-                          />
-                          <noscript>
-                            &lt;img alt="WSJ Image" sizes="100vw" srcset="
-                            /images/overview/wsj.svg 640w,
-                            /images/overview/wsj.svg 750w,
-                            /images/overview/wsj.svg 828w,
-                            /images/overview/wsj.svg 1080w,
-                            /images/overview/wsj.svg 1200w,
-                            /images/overview/wsj.svg 1920w,
-                            /images/overview/wsj.svg 2048w,
-                            /images/overview/wsj.svg 3840w "
-                            src="/images/overview/wsj.svg" decoding="async"
-                            data-nimg="fill" style=" position: absolute; top: 0;
-                            left: 0; bottom: 0; right: 0; box-sizing:
-                            border-box; padding: 0; border: none; margin: auto;
-                            display: block; width: 0; height: 0; min-width:
-                            100%; max-width: 100%; min-height: 100%; max-height:
-                            100%; " loading="lazy" /&gt;
-                          </noscript>
-                        </span>
-                      </div>
-                    </a>
-                  </div>
-                  <div
-                    className="styles__FeatureBoxCanvas-sc-ph09me-5 GWqio aos-item"
-                    data-aos="fade-up"
-                    data-aos-duration={1000}
-                    data-aos-delay={600}
-                  >
-                    <a
-                      target="_blank"
-                      href="https://finance.yahoo.com/news/remotebase-raises-2-1m-65m-140000048.html"
-                      className="styles__FeatureBox-sc-ph09me-6 hehuGy"
-                    >
-                      <div className="styles__FeatureImg-sc-ph09me-7 jdwHtS yahoo__img">
-                        <span
-                          style={{
-                            boxSizing: "border-box",
-                            display: "block",
-                            overflow: "hidden",
-                            width: "initial",
-                            height: "initial",
-                            background: "none",
-                            opacity: 1,
-                            border: 0,
-                            margin: 0,
-                            padding: 0,
-                            position: "absolute",
-                            top: 0,
-                            left: 0,
-                            bottom: 0,
-                            right: 0,
-                          }}
-                        >
-                          <img
-                            alt="Yahoo Image"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                            decoding="async"
-                            data-nimg="fill"
-                            style={{
-                              position: "absolute",
-                              top: 0,
-                              left: 0,
-                              bottom: 0,
-                              right: 0,
-                              boxSizing: "border-box",
-                              padding: 0,
-                              border: "none",
-                              margin: "auto",
-                              display: "block",
-                              width: 0,
-                              height: 0,
-                              minWidth: "100%",
-                              maxWidth: "100%",
-                              minHeight: "100%",
-                              maxHeight: "100%",
-                            }}
-                          />
-                          <noscript>
-                            &lt;img alt="Yahoo Image" sizes="100vw" srcset="
-                            /images/overview/yahoo.svg 640w,
-                            /images/overview/yahoo.svg 750w,
-                            /images/overview/yahoo.svg 828w,
-                            /images/overview/yahoo.svg 1080w,
-                            /images/overview/yahoo.svg 1200w,
-                            /images/overview/yahoo.svg 1920w,
-                            /images/overview/yahoo.svg 2048w,
-                            /images/overview/yahoo.svg 3840w "
-                            src="/images/overview/yahoo.svg" decoding="async"
-                            data-nimg="fill" style=" position: absolute; top: 0;
-                            left: 0; bottom: 0; right: 0; box-sizing:
-                            border-box; padding: 0; border: none; margin: auto;
-                            display: block; width: 0; height: 0; min-width:
-                            100%; max-width: 100%; min-height: 100%; max-height:
-                            100%; " loading="lazy" /&gt;
-                          </noscript>
-                        </span>
-                      </div>
-                    </a>
-                  </div>
-                  <div
-                    className="styles__FeatureBoxCanvas-sc-ph09me-5 GWqio aos-item"
-                    data-aos="fade-up"
-                    data-aos-duration={1000}
-                    data-aos-delay={700}
-                  >
-                    <a
-                      target="_blank"
-                      href="https://www.aol.com/news/remotebase-raises-2-1m-65m-140000048.html"
-                      className="styles__FeatureBox-sc-ph09me-6 hehuGy"
-                    >
-                      <div className="styles__FeatureImg-sc-ph09me-7 jdwHtS aol__img">
-                        <span
-                          style={{
-                            boxSizing: "border-box",
-                            display: "block",
-                            overflow: "hidden",
-                            width: "initial",
-                            height: "initial",
-                            background: "none",
-                            opacity: 1,
-                            border: 0,
-                            margin: 0,
-                            padding: 0,
-                            position: "absolute",
-                            top: 0,
-                            left: 0,
-                            bottom: 0,
-                            right: 0,
-                          }}
-                        >
-                          <img
-                            alt="AOL Image"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                            decoding="async"
-                            data-nimg="fill"
-                            style={{
-                              position: "absolute",
-                              top: 0,
-                              left: 0,
-                              bottom: 0,
-                              right: 0,
-                              boxSizing: "border-box",
-                              padding: 0,
-                              border: "none",
-                              margin: "auto",
-                              display: "block",
-                              width: 0,
-                              height: 0,
-                              minWidth: "100%",
-                              maxWidth: "100%",
-                              minHeight: "100%",
-                              maxHeight: "100%",
-                            }}
-                          />
-                          <noscript>
-                            &lt;img alt="AOL Image" sizes="100vw" srcset="
-                            /images/overview/aol.svg 640w,
-                            /images/overview/aol.svg 750w,
-                            /images/overview/aol.svg 828w,
-                            /images/overview/aol.svg 1080w,
-                            /images/overview/aol.svg 1200w,
-                            /images/overview/aol.svg 1920w,
-                            /images/overview/aol.svg 2048w,
-                            /images/overview/aol.svg 3840w "
-                            src="/images/overview/aol.svg" decoding="async"
-                            data-nimg="fill" style=" position: absolute; top: 0;
-                            left: 0; bottom: 0; right: 0; box-sizing:
-                            border-box; padding: 0; border: none; margin: auto;
-                            display: block; width: 0; height: 0; min-width:
-                            100%; max-width: 100%; min-height: 100%; max-height:
-                            100%; " loading="lazy" /&gt;
-                          </noscript>
-                        </span>
-                      </div>
-                    </a>
-                  </div>
-                  <div
-                    className="styles__FeatureBoxCanvas-sc-ph09me-5 GWqio aos-item"
-                    data-aos="fade-up"
-                    data-aos-duration={1000}
-                    data-aos-delay={800}
-                  >
-                    <a
-                      target="_blank"
-                      href="https://www.marketwatch.com/press-release/remotebase-raises-21m-at-a-65m-valuation-as-it-launches-developer-hiring-platform-talently-2022-10-27"
-                      className="styles__FeatureBox-sc-ph09me-6 hehuGy"
-                    >
-                      <div className="styles__FeatureImg-sc-ph09me-7 jdwHtS marketMatch__img">
-                        <span
-                          style={{
-                            boxSizing: "border-box",
-                            display: "block",
-                            overflow: "hidden",
-                            width: "initial",
-                            height: "initial",
-                            background: "none",
-                            opacity: 1,
-                            border: 0,
-                            margin: 0,
-                            padding: 0,
-                            position: "absolute",
-                            top: 0,
-                            left: 0,
-                            bottom: 0,
-                            right: 0,
-                          }}
-                        >
-                          <img
-                            alt="Market Match Image"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                            decoding="async"
-                            data-nimg="fill"
-                            style={{
-                              position: "absolute",
-                              top: 0,
-                              left: 0,
-                              bottom: 0,
-                              right: 0,
-                              boxSizing: "border-box",
-                              padding: 0,
-                              border: "none",
-                              margin: "auto",
-                              display: "block",
-                              width: 0,
-                              height: 0,
-                              minWidth: "100%",
-                              maxWidth: "100%",
-                              minHeight: "100%",
-                              maxHeight: "100%",
-                            }}
-                          />
-                          <noscript>
-                            &lt;img alt="Market Match Image" sizes="100vw"
-                            srcset=" /images/overview/market-match.svg 640w,
-                            /images/overview/market-match.svg 750w,
-                            /images/overview/market-match.svg 828w,
-                            /images/overview/market-match.svg 1080w,
-                            /images/overview/market-match.svg 1200w,
-                            /images/overview/market-match.svg 1920w,
-                            /images/overview/market-match.svg 2048w,
-                            /images/overview/market-match.svg 3840w "
-                            src="/images/overview/market-match.svg"
-                            decoding="async" data-nimg="fill" style=" position:
-                            absolute; top: 0; left: 0; bottom: 0; right: 0;
-                            box-sizing: border-box; padding: 0; border: none;
-                            margin: auto; display: block; width: 0; height: 0;
-                            min-width: 100%; max-width: 100%; min-height: 100%;
-                            max-height: 100%; " loading="lazy" /&gt;
-                          </noscript>
-                        </span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div> */}
+
             <div
               id="skills"
               className="styles__StacksStyled-sc-yjkxt6-0 bQKvEX"
+              style={{ background: "#FFFBF0 !important" }}
             >
               <div className="styles__Container-sc-yjkxt6-1 gIcibo">
                 <h2
@@ -2158,7 +1808,10 @@ function Home() {
                 </span>
               </div>
             </div>
-            <div className="styles__AnalyticsStyled-sc-im1wum-0 ewzUFH">
+            <div
+              className="styles__AnalyticsStyled-sc-im1wum-0 ewzUFH"
+              style={{ background: "#FFFBF0 !important" }}
+            >
               <div className="styles__Container-sc-im1wum-1 csCaVJ">
                 <h2
                   className="styles__AnalyticsHeading-sc-im1wum-2 elgoME aos-item"
@@ -2180,7 +1833,10 @@ function Home() {
                   data-aos-delay={950}
                 >
                   <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                    <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                    <div
+                      className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                      style={{ background: "#D4305F" }}
+                    >
                       <svg
                         width={21}
                         height={16}
@@ -2199,7 +1855,10 @@ function Home() {
                     </p>
                   </div>
                   <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                    <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                    <div
+                      className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                      style={{ background: "#D4305F" }}
+                    >
                       <svg
                         width={21}
                         height={16}
@@ -2218,7 +1877,10 @@ function Home() {
                     </p>
                   </div>
                   <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                    <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                    <div
+                      className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                      style={{ background: "#D4305F" }}
+                    >
                       <svg
                         width={21}
                         height={16}
@@ -2327,6 +1989,7 @@ function Home() {
                   <a
                     href="/start/?utm_source=undefined&utm_medium=undefined&utm_campaign=undefined"
                     className="styles__HireBtn-sc-im1wum-9 kkYfLx"
+                    style={{ background: "#D4305F" }}
                   >
                     <Link
                       to={"/start"}
@@ -2364,7 +2027,10 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="styles__VettingStyled-sc-7xqmqu-0 eleXlv">
+            <div
+              className="styles__VettingStyled-sc-7xqmqu-0 eleXlv"
+              style={{ background: "#FFFBF0 !important" }}
+            >
               <div className="styles__Container-sc-7xqmqu-1 euueMF">
                 <div className="styles__VettingGrid-sc-7xqmqu-2 iTMojC">
                   <div
@@ -2453,6 +2119,7 @@ function Home() {
                         data-aos="fade-up"
                         data-aos-duration={1000}
                         data-aos-delay={200}
+                        style={{ color: "#D4305F" }}
                       >
                         🔥 Rigorous Vetting
                       </label>
@@ -2494,7 +2161,10 @@ function Home() {
                       data-aos-delay={800}
                     >
                       <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                        <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                        <div
+                          className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                          style={{ background: "#D4305F" }}
+                        >
                           <svg
                             width={21}
                             height={16}
@@ -2513,7 +2183,10 @@ function Home() {
                         </p>
                       </div>
                       <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                        <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                        <div
+                          className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                          style={{ background: "#D4305F" }}
+                        >
                           <svg
                             width={21}
                             height={16}
@@ -2532,7 +2205,10 @@ function Home() {
                         </p>
                       </div>
                       <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                        <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                        <div
+                          className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                          style={{ background: "#D4305F" }}
+                        >
                           <svg
                             width={21}
                             height={16}
@@ -2551,7 +2227,10 @@ function Home() {
                         </p>
                       </div>
                       <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                        <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                        <div
+                          className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                          style={{ background: "#D4305F" }}
+                        >
                           <svg
                             width={21}
                             height={16}
@@ -2570,7 +2249,10 @@ function Home() {
                         </p>
                       </div>
                       <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                        <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                        <div
+                          className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                          style={{ background: "#D4305F" }}
+                        >
                           <svg
                             width={21}
                             height={16}
@@ -2596,6 +2278,7 @@ function Home() {
             <div
               id="process"
               className="styles__StepsStyled-sc-11thlrk-0 cufSNI"
+              style={{ background: "#FFFBF0 !important" }}
             >
               <div className="styles__Container-sc-11thlrk-1 dHunSj">
                 <div className="styles__StepsGrid-sc-11thlrk-2 ebuiqC">
@@ -2605,6 +2288,7 @@ function Home() {
                       data-aos="fade-up"
                       data-aos-duration={1000}
                       data-aos-delay={200}
+                      style={{ color: "#D4305F" }}
                     >
                       🔥 OUR ENGINEER
                     </label>
@@ -2623,6 +2307,7 @@ function Home() {
                           data-aos="fade-up"
                           data-aos-duration={1000}
                           data-aos-delay={500}
+                          style={{ background: "#D4305F" }}
                         >
                           1
                         </div>
@@ -2654,6 +2339,7 @@ function Home() {
                           data-aos="fade-up"
                           data-aos-duration={1000}
                           data-aos-delay={500}
+                          style={{ background: "#D4305F" }}
                         >
                           2
                         </div>
@@ -2684,6 +2370,7 @@ function Home() {
                           data-aos="fade-up"
                           data-aos-duration={1000}
                           data-aos-delay={500}
+                          style={{ background: "#D4305F" }}
                         >
                           3
                         </div>
@@ -2716,6 +2403,7 @@ function Home() {
                       <a
                         href="/start"
                         className="styles__StepsBtn-sc-11thlrk-13 juaLmu"
+                        style={{ background: "#D4305F" }}
                       >
                         <Link to={"/start"} style={{ color: "#fff" }}>
                           Hire Now
@@ -2750,12 +2438,10 @@ function Home() {
                     </div>
                     <div className="styles__ApplyJob-sc-11thlrk-14 fRlJIv">
                       Looking for jobs instead?{/* */}
-                      <a
-                        className="styles__ApplyJobLink-sc-11thlrk-15 XTCZO"
-                      >
-                         <Link to="/applyforjob" style={{color:'#3B52EF'}}>
-                        Apply for Jobs
-                      </Link>
+                      <a className="styles__ApplyJobLink-sc-11thlrk-15 XTCZO">
+                        <Link to="/applyforjob" style={{ color: "#D4305F" }}>
+                          Apply for Jobs
+                        </Link>
                       </a>
                     </div>
                   </div>
@@ -2787,7 +2473,7 @@ function Home() {
                       <img
                         alt="Hire Your Ideal Engineering Team In 3 Simple Steps"
                         // src="https://remotebase.com/_next/image?url=%2Fimages%2Foverview%2Fsteps-img.png&w=1920&q=75"
-                        src={Four}
+                        src={NewFour}
                         decoding="async"
                         data-nimg="fill"
                         style={{
@@ -2841,7 +2527,10 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="styles__ChooseStyled-sc-waf4go-0 kLybXt">
+            <div
+              className="styles__ChooseStyled-sc-waf4go-0 kLybXt"
+              style={{ background: "#FFFBF0 !important" }}
+            >
               <div className="styles__Container-sc-waf4go-1 izHqry">
                 <h2
                   className="styles__ChooseHeading-sc-waf4go-2 hxIQNN aos-item"
@@ -3392,7 +3081,10 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="styles__ValueStyled-sc-yscjzt-0 krODiK">
+            <div
+              className="styles__ValueStyled-sc-yscjzt-0 krODiK"
+              style={{ background: "#FFFBF0 !important" }}
+            >
               <div className="styles__Container-sc-yscjzt-1 cmaNyD">
                 <div className="styles__ValueGrid-sc-yscjzt-2 VFdBM">
                   <div className="styles__ValuePreview-sc-yscjzt-3 ezzCTx">
@@ -3419,6 +3111,7 @@ function Home() {
                           left: 0,
                           bottom: 0,
                           right: 0,
+                          marginTop: "-40px",
                         }}
                       >
                         <img
@@ -3444,6 +3137,7 @@ function Home() {
                             maxWidth: "100%",
                             minHeight: "100%",
                             maxHeight: "100%",
+                            marginTop: "-20px",
                           }}
                         />
                         <noscript>
@@ -3499,6 +3193,7 @@ function Home() {
                       data-aos="fade-up"
                       data-aos-duration={1000}
                       data-aos-delay={200}
+                      style={{ color: "#D4305F" }}
                     >
                       🔥 OUR VALUE
                     </label>
@@ -3545,7 +3240,10 @@ function Home() {
                           data-aos-delay={800}
                         >
                           <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                            <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                            <div
+                              className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                              style={{ background: "#D4305F" }}
+                            >
                               <svg
                                 width={21}
                                 height={16}
@@ -3564,7 +3262,10 @@ function Home() {
                             </p>
                           </div>
                           <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                            <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                            <div
+                              className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                              style={{ background: "#D4305F" }}
+                            >
                               <svg
                                 width={21}
                                 height={16}
@@ -3583,7 +3284,10 @@ function Home() {
                             </p>
                           </div>
                           <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                            <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                            <div
+                              className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                              style={{ background: "#D4305F" }}
+                            >
                               <svg
                                 width={21}
                                 height={16}
@@ -3619,7 +3323,10 @@ function Home() {
                           data-aos-delay={800}
                         >
                           <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                            <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                            <div
+                              className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                              style={{ background: "#D4305F" }}
+                            >
                               <svg
                                 width={21}
                                 height={16}
@@ -3638,7 +3345,10 @@ function Home() {
                             </p>
                           </div>
                           <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                            <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                            <div
+                              className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                              style={{ background: "#D4305F" }}
+                            >
                               <svg
                                 width={21}
                                 height={16}
@@ -3657,7 +3367,10 @@ function Home() {
                             </p>
                           </div>
                           <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                            <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                            <div
+                              className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                              style={{ background: "#D4305F" }}
+                            >
                               <svg
                                 width={21}
                                 height={16}
@@ -3693,7 +3406,10 @@ function Home() {
                           data-aos-delay={800}
                         >
                           <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                            <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                            <div
+                              className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                              style={{ background: "#D4305F" }}
+                            >
                               <svg
                                 width={21}
                                 height={16}
@@ -3712,7 +3428,10 @@ function Home() {
                             </p>
                           </div>
                           <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                            <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                            <div
+                              className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                              style={{ background: "#D4305F" }}
+                            >
                               <svg
                                 width={21}
                                 height={16}
@@ -3731,7 +3450,10 @@ function Home() {
                             </p>
                           </div>
                           <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                            <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                            <div
+                              className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                              style={{ background: "#D4305F" }}
+                            >
                               <svg
                                 width={21}
                                 height={16}
@@ -3756,7 +3478,10 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="styles__PerksStyled-sc-1bujfel-0 fiInkc">
+            <div
+              className="styles__PerksStyled-sc-1bujfel-0 fiInkc"
+              style={{ background: "#FFFBF0 !important" }}
+            >
               <div className="styles__Container-sc-1bujfel-1 QDvIl">
                 <div className="styles__PerksGrid-sc-1bujfel-2 bmhvKO">
                   <div className="styles__PerksContent-sc-1bujfel-3 hIVYSO">
@@ -3766,6 +3491,7 @@ function Home() {
                         data-aos="fade-up"
                         data-aos-duration={1000}
                         data-aos-delay={200}
+                        style={{ color: "#D4305F" }}
                       >
                         🔥 ADVANTAGES
                       </label>
@@ -3794,7 +3520,10 @@ function Home() {
                       data-aos-delay={800}
                     >
                       <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                        <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                        <div
+                          className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                          style={{ background: "#D4305F" }}
+                        >
                           <svg
                             width={21}
                             height={16}
@@ -3813,7 +3542,10 @@ function Home() {
                         </p>
                       </div>
                       <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                        <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                        <div
+                          className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                          style={{ background: "#D4305F" }}
+                        >
                           <svg
                             width={21}
                             height={16}
@@ -3832,7 +3564,10 @@ function Home() {
                         </p>
                       </div>
                       <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                        <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                        <div
+                          className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                          style={{ background: "#D4305F" }}
+                        >
                           <svg
                             width={21}
                             height={16}
@@ -3851,7 +3586,10 @@ function Home() {
                         </p>
                       </div>
                       <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                        <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                        <div
+                          className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                          style={{ background: "#D4305F" }}
+                        >
                           <svg
                             width={21}
                             height={16}
@@ -3870,7 +3608,10 @@ function Home() {
                         </p>
                       </div>
                       <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                        <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                        <div
+                          className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                          style={{ background: "#D4305F" }}
+                        >
                           <svg
                             width={21}
                             height={16}
@@ -3889,7 +3630,10 @@ function Home() {
                         </p>
                       </div>
                       <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                        <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                        <div
+                          className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                          style={{ background: "#D4305F" }}
+                        >
                           <svg
                             width={21}
                             height={16}
@@ -3908,7 +3652,10 @@ function Home() {
                         </p>
                       </div>
                       <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                        <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                        <div
+                          className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                          style={{ background: "#D4305F" }}
+                        >
                           <svg
                             width={21}
                             height={16}
@@ -3927,7 +3674,10 @@ function Home() {
                         </p>
                       </div>
                       <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                        <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                        <div
+                          className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                          style={{ background: "#D4305F" }}
+                        >
                           <svg
                             width={21}
                             height={16}
@@ -3946,7 +3696,10 @@ function Home() {
                         </p>
                       </div>
                       <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                        <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                        <div
+                          className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                          style={{ background: "#D4305F" }}
+                        >
                           <svg
                             width={21}
                             height={16}
@@ -3965,7 +3718,10 @@ function Home() {
                         </p>
                       </div>
                       <div className="styles__CheckedItem-sc-64rg8n-0 ecZJLI">
-                        <div className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU">
+                        <div
+                          className="styles__CheckedCircle-sc-64rg8n-1 dDCgtU"
+                          style={{ background: "#D4305F" }}
+                        >
                           <svg
                             width={21}
                             height={16}
@@ -3992,10 +3748,11 @@ function Home() {
                     >
                       <a
                         className="styles__JobBtn-sc-1bujfel-10 dOrGkZ"
+                        style={{ background: "#D4305F" }}
                       >
-                    <Link to="/applyforjob" style={{color:'#3B52EF'}}>
-                        Apply for Jobs
-                      </Link>
+                        <Link to="/applyforjob" style={{ color: "#fff" }}>
+                          Apply for Jobs
+                        </Link>
                         <span>
                           <svg
                             width={20}
@@ -4107,13 +3864,17 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="styles__ReviewStyled-sc-1ax1472-0 bhvgTT">
+            <div
+              className="styles__ReviewStyled-sc-1ax1472-0 bhvgTT"
+              style={{ background: "#FFFBF0 !important" }}
+            >
               <div className="styles__Container-sc-1ax1472-1 gHsaRm">
                 <label
                   className="styles__ReviewCardLabel-sc-1ax1472-2 bhvkNZ aos-item"
                   data-aos="fade-up"
                   data-aos-duration={1000}
                   data-aos-delay={200}
+                  style={{ color: "#D4305F" }}
                 >
                   🔥 Testimonials
                 </label>
@@ -4317,8 +4078,14 @@ function Home() {
                       <a
                         href="/start"
                         className="styles__TalentBtn-sc-1617iz2-6 cSULd"
+                        style={{
+                          background: "#D4305F",
+                          color: "#ffffff !important",
+                        }}
                       >
-                        <Link to={"/start"}>Hire Now</Link>
+                        <Link to={"/start"} style={{ color: "#fff" }}>
+                          Hire Now
+                        </Link>
                         <span>
                           <svg
                             width={20}
@@ -4358,12 +4125,10 @@ function Home() {
                     </div>
                     <div className="styles__ContactUsText-sc-1617iz2-8 dULAyW">
                       Looking for jobs instead?{/* */}
-                      <a
-                        className="styles__ContactUsTextLink-sc-1617iz2-9 cAxViF"
-                      >
-                  <Link to="/applyforjob" style={{color:'#3B52EF'}}>
-                        Apply for Jobs
-                      </Link>
+                      <a className="styles__ContactUsTextLink-sc-1617iz2-9 cAxViF">
+                        <Link to="/applyforjob" style={{ color: "#D4305F" }}>
+                          Apply for Jobs
+                        </Link>
                       </a>
                     </div>
                   </div>
@@ -4397,7 +4162,7 @@ function Home() {
                           <img
                             alt="Java developer remotely at Qume"
                             // src="https://remotebase.com/_next/image?url=%2Fimages%2Foverview%2FcontactUs-img.png&w=1920&q=75"
-                            src={Seven}
+                            src={NewSeven}
                             decoding="async"
                             data-nimg="fill"
                             style={{
@@ -4471,7 +4236,11 @@ function Home() {
                 </div>
               </div>
             </div>
-            <footer id="footer" className="styles__Footer-sc-1xf49c1-0 gbekYq">
+            <footer
+              id="footer"
+              className="styles__Footer-sc-1xf49c1-0 gbekYq"
+              style={{ background: "#FFFBF0 !important" }}
+            >
               <div className="styles__Container-sc-1xf49c1-1 ktkAgg">
                 <div className="styles__FooterBody-sc-1xf49c1-2 hckuXd">
                   <a

@@ -25,6 +25,7 @@ import { CardActionArea, CardActions, Stack } from "@mui/material";
 import StartSignUp from "../../Components/StartSignup/StartSignUp";
 import StartSchedule from "../../Components/StartSchedule/StartSchedule";
 import "./style.css";
+import logo from "../../Images/logo.png"
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -424,14 +425,16 @@ function TextMobileStepper() {
       label: (
         <>
           <Box sx={{ pt: 2, textAlign: "center" }}>
-            <Typography>
-              <img src="https://remotebase.com/_next/image?url=%2Fimages%2Frb-logo.png&w=1920&q=100" />
-            </Typography>
-            <Box sx={{ pt: 4, textAlign: "center" }}>
+            <div style={{background:'transparent',marginTop:'-10px'}}>
+              <img src={logo} width={300} height={300} style={{marginTop:'-70px'}} />
+            </div>
+            <Box sx={{ pt: 4, textAlign: "center", marginTop:'-60px' }}>
               <Typography variant="h4" textAlign={"center"} fontWeight={"bold"}>
                 Hire Your Dream Developer Team Now
               </Typography>
             </Box>
+            <br />
+            <br />
             <br />
           </Box>
         </>
@@ -495,7 +498,7 @@ function TextMobileStepper() {
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
                             style={{
-                              backgroundColor: isActiveOne ? "#3c65fe" : "",
+                              backgroundColor: isActiveOne ? "#D4305F" : "",
                               color: isActiveOne ? "white" : "",
                             }}
                             onClick={handleClickOne}
@@ -505,7 +508,7 @@ function TextMobileStepper() {
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
                             style={{
-                              backgroundColor: isActive ? "#3c65fe" : "",
+                              backgroundColor: isActive ? "#D4305F" : "",
                               color: isActive ? "white" : "",
                             }}
                             onClick={handleClick}
@@ -515,7 +518,7 @@ function TextMobileStepper() {
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
                             style={{
-                              backgroundColor: isActiveTwo ? "#3c65fe" : "",
+                              backgroundColor: isActiveTwo ? "#D4305F" : "",
                               color: isActiveTwo ? "white" : "",
                             }}
                             onClick={handleClickTwo}
@@ -525,7 +528,7 @@ function TextMobileStepper() {
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
                             style={{
-                              backgroundColor: isActiveThree ? "#3c65fe" : "",
+                              backgroundColor: isActiveThree ? "#D4305F" : "",
                               color: isActiveThree ? "white" : "",
                             }}
                             onClick={handleClick3}
@@ -535,7 +538,7 @@ function TextMobileStepper() {
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
                             style={{
-                              backgroundColor: isActiveFour ? "#3c65fe" : "",
+                              backgroundColor: isActiveFour ? "#D4305F" : "",
                               color: isActiveFour ? "white" : "",
                             }}
                             onClick={handleClick4}
@@ -545,7 +548,7 @@ function TextMobileStepper() {
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
                             style={{
-                              backgroundColor: isActiveFive ? "#3c65fe" : "",
+                              backgroundColor: isActiveFive ? "#D4305F" : "",
                               color: isActiveFive ? "white" : "",
                             }}
                             onClick={handleClick5}
@@ -555,7 +558,7 @@ function TextMobileStepper() {
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
                             style={{
-                              backgroundColor: isActiveSix ? "#3c65fe" : "",
+                              backgroundColor: isActiveSix ? "#D4305F" : "",
                               color: isActiveSix ? "white" : "",
                             }}
                             onClick={handleClick6}
@@ -565,7 +568,7 @@ function TextMobileStepper() {
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
                             style={{
-                              backgroundColor: isActiveSeven ? "#3c65fe" : "",
+                              backgroundColor: isActiveSeven ? "#D4305F" : "",
                               color: isActiveSeven ? "white" : "",
                             }}
                             onClick={handleClick7}
@@ -575,7 +578,7 @@ function TextMobileStepper() {
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
                             style={{
-                              backgroundColor: isActiveEight ? "#3c65fe" : "",
+                              backgroundColor: isActiveEight ? "#D4305F" : "",
                               color: isActiveEight ? "white" : "",
                             }}
                             onClick={handleClick8}
@@ -585,7 +588,7 @@ function TextMobileStepper() {
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
                             style={{
-                              backgroundColor: isActiveNine ? "#3c65fe" : "",
+                              backgroundColor: isActiveNine ? "#D4305F" : "",
                               color: isActiveNine ? "white" : "",
                             }}
                             onClick={handleClick9}
@@ -595,7 +598,7 @@ function TextMobileStepper() {
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
                             style={{
-                              backgroundColor: isActiveTen ? "#3c65fe" : "",
+                              backgroundColor: isActiveTen ? "#D4305F" : "",
                               color: isActiveTen ? "white" : "",
                             }}
                             onClick={handleClick10}
@@ -605,7 +608,7 @@ function TextMobileStepper() {
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
                             style={{
-                              backgroundColor: isActiveEleven ? "#3c65fe" : "",
+                              backgroundColor: isActiveEleven ? "#D4305F" : "",
                               color: isActiveEleven ? "white" : "",
                             }}
                             onClick={handleClick11}
@@ -615,7 +618,7 @@ function TextMobileStepper() {
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
                             style={{
-                              backgroundColor: isActiveTwelve ? "#3c65fe" : "",
+                              backgroundColor: isActiveTwelve ? "#D4305F" : "",
                               color: isActiveTwelve ? "white" : "",
                             }}
                             onClick={handleClick12}
@@ -626,7 +629,7 @@ function TextMobileStepper() {
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
                             style={{
                               backgroundColor: isActiveThirteen
-                                ? "#3c65fe"
+                                ? "#D4305F"
                                 : "",
                               color: isActiveThirteen ? "white" : "",
                             }}
@@ -638,7 +641,7 @@ function TextMobileStepper() {
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
                             style={{
                               backgroundColor: isActiveFourteen
-                                ? "#3c65fe"
+                                ? "#D4305F"
                                 : "",
                               color: isActiveFourteen ? "white" : "",
                             }}
@@ -649,7 +652,7 @@ function TextMobileStepper() {
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
                             style={{
-                              backgroundColor: isActiveFifteen ? "#3c65fe" : "",
+                              backgroundColor: isActiveFifteen ? "#D4305F" : "",
                               color: isActiveFifteen ? "white" : "",
                             }}
                             onClick={handleClick15}
@@ -659,7 +662,7 @@ function TextMobileStepper() {
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
                             style={{
-                              backgroundColor: isActiveSixteen ? "#3c65fe" : "",
+                              backgroundColor: isActiveSixteen ? "#D4305F" : "",
                               color: isActiveSixteen ? "white" : "",
                             }}
                             onClick={handleClick16}
@@ -670,7 +673,7 @@ function TextMobileStepper() {
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
                             style={{
                               backgroundColor: isActiveSeventeen
-                                ? "#3c65fe"
+                                ? "#D4305F"
                                 : "",
                               color: isActiveSeventeen ? "white" : "",
                             }}
@@ -682,7 +685,7 @@ function TextMobileStepper() {
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
                             style={{
                               backgroundColor: isActiveEighteen
-                                ? "#3c65fe"
+                                ? "#D4305F"
                                 : "",
                               color: isActiveEighteen ? "white" : "",
                             }}
@@ -694,7 +697,7 @@ function TextMobileStepper() {
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
                             style={{
                               backgroundColor: isActiveNineteen
-                                ? "#3c65fe"
+                                ? "#D4305F"
                                 : "",
                               color: isActiveNineteen ? "white" : "",
                             }}
@@ -705,7 +708,7 @@ function TextMobileStepper() {
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
                             style={{
-                              backgroundColor: isActiveTwenty ? "#3c65fe" : "",
+                              backgroundColor: isActiveTwenty ? "#D4305F" : "",
                               color: isActiveTwenty ? "white" : "",
                             }}
                             onClick={handleClick20}
@@ -728,7 +731,8 @@ function TextMobileStepper() {
         <>
           <Box sx={{ pt: 2, textAlign: "center" }}>
             <Typography>
-              <img src="https://remotebase.com/_next/image?url=%2Fimages%2Frb-logo.png&w=1920&q=100" />
+            <img src={logo} width={250} height={250} style={{marginTop:'-100px'}} />
+        
             </Typography>
             <Box sx={{ pt: 4, textAlign: "center" }}>
               <Typography variant="h4" textAlign={"center"} fontWeight={"bold"}>
@@ -813,7 +817,7 @@ function TextMobileStepper() {
                   />
                   <MultiActionAreaCard
                     src={
-                      "https://cdn-hmicd.nitrocdn.com/RtJPLEXXBxaOIVtCTtcPywzxSEnDeTSR/assets/images/optimized/rev-32af359/wp-content/uploads/2022/07/Mood-Sad.png"
+                      "https://www.nicepng.com/png/detail/164-1647456_vaporwave-clipart-sad-sad-faces-black-and-white.png"
                     }
                     title="I am not sure"
                     style={{
@@ -835,8 +839,9 @@ function TextMobileStepper() {
         <>
           <Box sx={{ pt: 2, textAlign: "center" }}>
             <Typography>
-              <img src="https://remotebase.com/_next/image?url=%2Fimages%2Frb-logo.png&w=1920&q=100" />
-            </Typography>
+            <img src={logo} width={250} height={250} style={{marginTop:'-100px'}} />
+        
+                </Typography>
             <Box sx={{ pt: 4, textAlign: "center" }}>
               <Typography variant="h4" textAlign={"center"} fontWeight={"bold"}>
                 When do you need the developer to start?
@@ -920,7 +925,7 @@ function TextMobileStepper() {
                   <MultiActionAreaCard
                     title="I am not sure"
                     src={
-                      "https://cdn-hmicd.nitrocdn.com/RtJPLEXXBxaOIVtCTtcPywzxSEnDeTSR/assets/images/optimized/rev-32af359/wp-content/uploads/2022/07/Mood-Sad.png"
+                      "https://www.nicepng.com/png/detail/164-1647456_vaporwave-clipart-sad-sad-faces-black-and-white.png"
                     }
                     style={{
                       border: selsCardTwo ? "1px solid #ccc" : "",
@@ -941,8 +946,8 @@ function TextMobileStepper() {
         <>
           <Box sx={{ pt: 2, textAlign: "center" }}>
             <Typography>
-              <img src="https://remotebase.com/_next/image?url=%2Fimages%2Frb-logo.png&w=1920&q=100" />
-            </Typography>
+            <img src={logo} width={250} height={250} style={{marginTop:'-100px'}} />
+             </Typography>
           </Box>
         </>
       ),
@@ -959,8 +964,9 @@ function TextMobileStepper() {
         <>
           <Box sx={{ pt: 2, textAlign: "center" }}>
             <Typography>
-              <img src="https://remotebase.com/_next/image?url=%2Fimages%2Frb-logo.png&w=1920&q=100" />
-            </Typography>
+            <img src={logo} width={250} height={250} style={{marginTop:'-100px'}} />
+        
+              </Typography>
           </Box>
         </>
       ),

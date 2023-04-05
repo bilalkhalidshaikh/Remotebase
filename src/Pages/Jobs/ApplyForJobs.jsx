@@ -20,6 +20,7 @@
   import Stack from "@mui/material/Stack";
   import { styled } from "@mui/material/styles";
   import { AntDesignOutlined } from "@ant-design/icons";
+  import logo from "../../Images/logo.png"
   import {
     TextField,
     Grid,
@@ -74,10 +75,9 @@
     };
 
     return (
-      <AppBar position="static" color="transparent">
+      <AppBar position="static" color="transparent" style={{height:'100px'}}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
             <Typography
               variant="h6"
               noWrap
@@ -93,7 +93,8 @@
                 textDecoration: "none",
               }}
             >
-              LOGO
+                  <img src={logo} width={300} height={300} style={{marginTop:'-100px'}} />
+        
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -165,10 +166,10 @@
 
             <Box sx={{ flexGrow: 0 }}>
               &nbsp;
-              <Typography variant="h6">Senior .Net Developer</Typography>
-              <Typography variant="subtitle1">
+              <Typography variant="h6" style={{marginTop:'-80px'}}>Senior .Net Developer</Typography>
+              {/* <Typography variant="subtitle1">
                 <LocationOnIcon /> B-15 Phase 5 DHA, Lahore, Punjab, Pakistan
-              </Typography>
+              </Typography> */}
               &nbsp;
             </Box>
           </Toolbar>
