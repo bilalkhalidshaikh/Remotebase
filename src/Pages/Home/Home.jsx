@@ -4221,7 +4221,7 @@ function Home() {
                         data-aos-offset={0}
                       >
                         <h3 className="styles__PreviewOverlayName-sc-1617iz2-16 cZAHuv">
-                          Amy
+                          Jack
                         </h3>
                         <span className="styles__PreviewOverlayJob-sc-1617iz2-17 iEzWKe">
                           Python developer
