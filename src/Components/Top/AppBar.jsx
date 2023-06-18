@@ -33,7 +33,7 @@ function CollapsibleExample() {
             </NavDropdown> */}
           </Nav>
           <Nav>
-            {/* <Nav.Link style={{  }}> */}
+            {/* <Nav.Link style={{  }}>
             <Link
               style={{
                 textDecoration: "none",
@@ -45,8 +45,8 @@ function CollapsibleExample() {
               to={"/applyforjob"}
             >
               Apply as a Developer
-              {/* </Nav.Link> */}
             </Link>
+              </Nav.Link> */}
             <Nav.Link eventKey={2}>
               <button className="davFMk">
                 <Link

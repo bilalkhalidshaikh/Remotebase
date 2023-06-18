@@ -10,8 +10,9 @@ import c2 from "./c2.png"
 import c3 from "./c3.png"
 import c4 from "./c4.png"
 import c5 from "./c5.png"
+import c6 from "./c6.PNG"
 import NewOne from "./wetransfer_derick-mckinney-bbuujb98ppy-unsplash-png_2023-03-06_1655/My project.png"
 import NewFour from "./wetransfer_derick-mckinney-bbuujb98ppy-unsplash-png_2023-03-06_1655/Teal and Black Professional Software Engineer Simple Resume.png"
 import NewSeven from "./wetransfer_derick-mckinney-bbuujb98ppy-unsplash-png_2023-03-06_1655/derick-mckinney-bBuUjB98PPY-unsplash.png"
 
-export {One,Two,Three,Five,Six,Seven,Four,NewOne,NewFour,NewSeven,c1,c2,c3,c4,c5}
+export {One,Two,Three,Five,Six,Seven,Four,NewOne,NewFour,NewSeven,c1,c2,c3,c4,c5,c6}

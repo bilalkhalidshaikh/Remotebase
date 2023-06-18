@@ -15,10 +15,12 @@ import {
   c2,
   c3,
   c4,
-  c5
+  c5,
+  c6
 } from "../../Images";
 import { Image } from "react-bootstrap";
 import { Stack, Avatar, Typography, Container } from "@mui/material";
+
 
 function Home() {
   return (
@@ -578,7 +580,7 @@ function Home() {
                 >
                   Trusted by <span>top-tier</span> companies
                 </h5>
-                <div className="styles__CompaniesGrid-sc-1i1m5qf-3 fKrWXR">
+                {/* <div className="styles__CompaniesGrid-sc-1i1m5qf-3 fKrWXR">
                   <div
                     className="styles__CompaniesItem-sc-1i1m5qf-4 fPUvIS aos-item"
                     data-aos="fade-up"
@@ -1441,7 +1443,152 @@ function Home() {
                       </span>
                     </a>
                   </div>
-                </div>
+                </div> */}
+                <Container 
+                >
+                        <Stack direction="row" spacing={6}>
+                        <Image
+                            alt="Java developer remotely at Qume"
+                            src={c1}
+                            decoding="async"
+                            data-nimg="fill"
+                            style={{ width: "160px", height: "160px" }}
+                            className="oimg"
+                            />
+                        <Image
+                            alt="Java developer remotely at Qume"
+                            src={c2}
+                            decoding="async"
+                            data-nimg="fill"
+                            style={{ width: "160px", height: "160px" }}
+                            className="oimg"
+                            />
+                         
+                        <Image
+                            alt="Java developer remotely at Qume"
+                            src={c3}
+                            decoding="async"
+                            data-nimg="fill"
+                            style={{ width: "160px", height: "60px",marginTop:'50px' }}
+                            className="oimg"
+                            />
+                        <Image
+                            alt="Java developer remotely at Qume"
+                            src={c4}
+                            decoding="async"
+                            data-nimg="fill"
+                            style={{ width: "160px", height: "60px",marginTop:'50px' }}
+                            className="oimg"
+                            />
+                         
+                        <Image
+                            alt="Java developer remotely at Qume"
+                            src={c5}
+                            decoding="async"
+                            data-nimg="fill"
+                            style={{ width: "160px", height: "160px" }}
+                            className="oimg"
+                            />
+                         
+                        <Image
+                            alt="Java developer remotely at Qume"
+                            src={"https://remotebase.com/images/overview/qume.svg"}
+                            decoding="async"
+                            data-nimg="fill"
+                            style={{ width: "160px", height: "160px" }}
+                            className="oimg"
+                            />
+                         
+                        </Stack>
+                 
+                      </Container>
+<br/>
+                <Container 
+                >
+                        <Stack direction="row" spacing={6}>
+                        <Image
+                            alt="Java developer remotely at Qume"
+                            src={c6}
+                            decoding="async"
+                            data-nimg="fill"
+                            style={{ width: "160px", height: "160px" }}
+                            className="oimg"
+                            />
+                        <Image
+                            alt="Java developer remotely at Qume"
+                            src={'https://remotebase.com/images/overview/spacetrics.svg'}
+                            decoding="async"
+                            data-nimg="fill"
+                            style={{ width: "160px", height: "160px" }}
+                            className="oimg"
+                            />
+                        <Image
+                            alt="Java developer remotely at Qume"
+                            src={'https://remotebase.com/images/overview/atoms.svg'}
+                            decoding="async"
+                            data-nimg="fill"
+                            style={{ width: "160px", height: "160px" }}
+                            className="oimg"
+                            />
+                         
+                        <Image
+                            alt="Java developer remotely at Qume"
+                            src={"https://remotebase.com/images/overview/laskie.svg"}
+                            decoding="async"
+                            data-nimg="fill"
+                            style={{ width: "160px", height: "60px",marginTop:'50px' }}
+                            className="oimg"
+                            />
+                        <Image
+                            alt="Java developer remotely at Qume"
+                            src={"https://remotebase.com/images/overview/swvl.svg"}
+                            decoding="async"
+                            data-nimg="fill"
+                            style={{ width: "160px", height: "60px",marginTop:'50px' }}
+                            className="oimg"
+                            />
+                         
+                        {/* <Image
+                            alt="Java developer remotely at Qume"
+                            src={"https://remotebase.com/images/overview/neyborly.svg"}
+                            decoding="async"
+                            data-nimg="fill"
+                            style={{ width: "160px", height: "160px" }}
+                            className="oimg"
+                            />
+                          */}
+                        <Image
+                            alt="Java developer remotely at Qume"
+                            src={"https://remotebase.com/images/overview/lugg.svg"}
+                            decoding="async"
+                            data-nimg="fill"
+                            style={{ width: "160px", height: "160px" }}
+                            className="oimg"
+                            />
+                         
+                        </Stack>
+                 
+                      </Container>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
               </div>
             </div>
             <div

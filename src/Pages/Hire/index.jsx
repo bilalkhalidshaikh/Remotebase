@@ -446,7 +446,8 @@ function TextMobileStepper() {
               variant="body1"
               gutterBottom
               fontWeight={"100"}
-              color="rgb(130, 130, 130)"
+              color="#333"
+              style={{color:'#333'}}
             >
               Get a world-class team of the top 1% of remote software developers
               within 24 hours and accelerate your tech hiring process. Enjoy a
