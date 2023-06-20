@@ -4523,7 +4523,7 @@ function Home() {
                         </span>
                       </a>
                       <a
-                        href="mailto:hello@remotebase.com"
+                        href="mailto:hello@leveluptechstudios.com"
                         className="styles__ContactUsnBtn-sc-1617iz2-7 jmJWCf aos-item"
                         data-aos="fade-up"
                         data-aos-duration={1000}
