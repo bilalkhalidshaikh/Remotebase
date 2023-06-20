@@ -389,6 +389,17 @@
       font-size: 36px;
     }
   } /*!sc*/
+
+@media  (min-width:375px) {
+  /* .stepContainer{
+    margin-top:80% !important;
+  } */
+  .skill_contain{
+    margin-top: 20px;
+  }
+}
+
+
   data-styled.g1424[id="styles__StepsHeading-sc-s0b09o-4"] {
     content: "jsqOJv,";
   } /*!sc*/

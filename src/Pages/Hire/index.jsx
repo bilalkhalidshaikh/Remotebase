@@ -25,7 +25,7 @@ import { CardActionArea, CardActions, Stack } from "@mui/material";
 import StartSignUp from "../../Components/StartSignup/StartSignUp";
 import StartSchedule from "../../Components/StartSchedule/StartSchedule";
 import "./style.css";
-import logo from "../../Images/logo.png"
+import logo from "../../Images/logo.png";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -283,50 +283,49 @@ function TextMobileStepper() {
 
   const clickCard = () => {
     setSelCard((current) => !current);
-    handleNext()
-  
+    handleNext();
   };
   const [selCardOne, setSelCardOne] = useState(false);
 
   const clickCardOne = () => {
     setSelCardOne((current) => !current);
-    handleNext()
+    handleNext();
   };
   const [selCardTwo, setSelCardTwo] = useState(false);
 
   const clickCardTwo = () => {
     setSelCardTwo((current) => !current);
-    handleNext()
+    handleNext();
   };
   const [selCardThree, setSelCardThree] = useState(false);
 
   const clickCardThree = () => {
     setSelCardThree((current) => !current);
-    handleNext()
+    handleNext();
   };
   const [selsCard, setSelsCard] = useState(false);
 
   const clicksCard = () => {
     setSelsCard((current) => !current);
-    handleNext()
+    handleNext();
   };
   const [selsCardOne, setSelsCardOne] = useState(false);
 
   const clicksCardOne = () => {
     setSelsCardOne((current) => !current);
-    handleNext()
+    handleNext();
   };
   const [selsCardTwo, setSelsCardTwo] = useState(false);
 
   const clicksCardTwo = () => {
     setSelsCardTwo((current) => !current);
-    handleNext()
+    handleNext();
   };
   const [selsCardThree, setSelsCardThree] = useState(false);
 
   const clicksCardThree = () => {
     setSelsCardThree((current) => !current);
-    handleNext()
+    handleNext();
   };
 
   const [isActive, setIsActive] = useState(false);
@@ -354,7 +353,6 @@ function TextMobileStepper() {
   const handleClick = () => {
     // 👇️ toggle
     setIsActive((current) => !current);
-
 
     // 👇️ or set to true
     // setIsActive(true);
@@ -428,7 +426,7 @@ function TextMobileStepper() {
             <div style={{background:'transparent',marginTop:'-10px'}}>
               <img src={logo} width={300} height={300} style={{marginTop:'-70px'}} />
             </div>
-            <Box sx={{ pt: 4, textAlign: "center", marginTop:'-60px' }}>
+            <Box sx={{ pt: 4, textAlign: "center", marginTop:'-60px',display: { xs: 'none', md: 'block' }  }}>
               <Typography variant="h4" textAlign={"center"} fontWeight={"bold"}>
                 Hire Your Dream Developer Team Now
               </Typography>
@@ -441,24 +439,19 @@ function TextMobileStepper() {
       ),
       description: (
         <>
-          <Box sx={{ pt: 7, width: "100%", margin: "0px auto" }}>
+          <Box sx={{ pt: 7, width: "100%", margin: "0px auto",display: { xs: 'none', md: 'block' } }}>
             <Typography
               variant="body1"
               gutterBottom
-              fontWeight={"100"}
-              color="#333"
-              style={{color:'#333'}}
+              fontWeight={"400"}
+              style={{ color: "#000",height:'120px' }}
             >
               Get a world-class team of the top 1% of remote software developers
               within 24 hours and accelerate your tech hiring process. Enjoy a
               2-week free trial and work with the best developer talent for two
               weeks without paying any upfront charges.
             </Typography>
-            {/* <Box>
-              <MultipleSelectChip />
-            </Box> */}
-            <Box sx={{ pt: 4 }}>
-              {/* <SkillsSet /> */}
+            <Box className="skill_contain" sx={{ pt: 4 ,overflow:'scroll',position:'fixed',height:'320px'}} >
               <div className="styles__SkillsWrapper-sc-s0b09o-0 gIDjoE">
                 <div className="styles__Container-sc-s0b09o-1 fmsQUU">
                   <div className="styles__SkillsCanvas-sc-s0b09o-2 fbJaPV">
@@ -504,7 +497,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClickOne}
                           >
-                            +{/* */}CSS{/* */}
+                            + CSS 
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -514,7 +507,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick}
                           >
-                            +{/* */}React{/* */}
+                            + React 
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -524,7 +517,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClickTwo}
                           >
-                            +{/* */}Node.js{/* */}
+                            + Node.js 
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -534,7 +527,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick3}
                           >
-                            +{/* */}Angular{/* */}
+                            + Angular 
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -544,7 +537,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick4}
                           >
-                            +{/* */}Python{/* */}
+                            + Python 
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -554,7 +547,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick5}
                           >
-                            +{/* */}Swift{/* */}
+                            + Swift 
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -564,7 +557,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick6}
                           >
-                            +{/* */}ReactNative{/* */}
+                            + ReactNative 
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -574,7 +567,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick7}
                           >
-                            +{/* */}Android{/* */}
+                            + Android 
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -584,7 +577,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick8}
                           >
-                            +{/* */}IOS{/* */}
+                            + IOS 
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -594,7 +587,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick9}
                           >
-                            +{/* */}Java{/* */}
+                            + Java 
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -604,7 +597,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick10}
                           >
-                            +{/* */}Ruby on Rails{/* */}
+                            + Ruby on Rails 
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -614,7 +607,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick11}
                           >
-                            +{/* */}Go{/* */}
+                            + Go 
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -624,7 +617,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick12}
                           >
-                            +{/* */}Vue.js{/* */}
+                            + Vue.js 
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -636,7 +629,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick13}
                           >
-                            +{/* */}DevOps{/* */}
+                            + DevOps 
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -648,7 +641,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick14}
                           >
-                            +{/* */}PHP{/* */}
+                            + PHP 
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -658,7 +651,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick15}
                           >
-                            +{/* */}MachineLearning{/* */}
+                            + MachineLearning 
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -668,7 +661,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick16}
                           >
-                            +{/* */}TypeScript{/* */}
+                            + TypeScript 
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -680,7 +673,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick17}
                           >
-                            +{/* */}HTML{/* */}
+                            + HTML 
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -692,7 +685,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick18}
                           >
-                            +{/* */}Javascript{/* */}
+                            + Javascript 
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -704,7 +697,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick19}
                           >
-                            +{/* */}Other{/* */}
+                            + Other 
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -714,7 +707,289 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick20}
                           >
-                            +{/* */}I am not sure{/* */}
+                            + I am not sure 
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Box>
+          </Box>
+          <Box sx={{ pt: 7, width: "100%", margin: "0px auto",display: { xs: 'block', md: 'none' } }}>
+            {/* <Typography
+              variant="body1"
+              gutterBottom
+              fontWeight={"100"}
+              color="#333"
+              style={{ color: "#000",height:'120px' }}
+            >
+              Get a world-class team of the top 1% of remote software developers
+              within 24 hours and accelerate your tech hiring process. Enjoy a
+              2-week free trial and work with the best developer talent for two
+              weeks without paying any upfront charges.
+            </Typography> */}
+            <Typography variant="h5" textAlign={"center"} fontWeight={"bold"} sx={{marginTop:'45px'}}>
+                Hire Your Dream Developer Team Now
+              </Typography>
+            <Box className="skill_contain" sx={{ pt: 1 ,overflow:'scroll',position:'fixed',height:'280px'}} >
+              <div className="styles__SkillsWrapper-sc-s0b09o-0 gIDjoE">
+                <div className="styles__Container-sc-s0b09o-1 fmsQUU">
+                  <div className="styles__SkillsCanvas-sc-s0b09o-2 fbJaPV">
+                    <div className="styles__SkillsContent-sc-s0b09o-7 frFFiG">
+                      <div className="styles__ExpertiseCombine-sc-s0b09o-8 hmZUhN">
+                        <div
+                          className="styles__FormGroup-sc-s0b09o-9 fGDCLS aos-item"
+                          data-aos="fade-zoom-in"
+                          data-aos-easing="ease-in-back"
+                          data-aos-delay={200}
+                          data-aos-offset={0}
+                        />
+                        <div
+                          className="styles__ExploreBadgeGroup-sc-s0b09o-11 jVYgMv aos-item"
+                          data-aos="fade-zoom-in"
+                          data-aos-easing="ease-in-back"
+                          data-aos-delay={300}
+                          data-aos-offset={0}
+                        />
+                      </div>
+                      <div className="styles__SkillsCombine-sc-s0b09o-14 bNCweA">
+                        <label
+                          className="styles__SkillsLabel-sc-s0b09o-15 gnogEc aos-item"
+                          data-aos="fade-zoom-in"
+                          data-aos-easing="ease-in-back"
+                          data-aos-delay={400}
+                          data-aos-offset={0}
+                        >
+                          Popular skills for <b>Developer:</b>
+                        </label>
+                        <div
+                          className="styles__ExpertiseBadgeGroup-sc-s0b09o-16 cOijbV aos-item"
+                          data-aos="fade-zoom-in"
+                          data-aos-easing="ease-in-back"
+                          data-aos-delay={500}
+                          data-aos-offset={0}
+                        >
+                          <div
+                            className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
+                            style={{
+                              backgroundColor: isActiveOne ? "#D4305F" : "",
+                              color: isActiveOne ? "white" : "",
+                            }}
+                            onClick={handleClickOne}
+                          >
+                            + CSS 
+                          </div>
+                          <div
+                            className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
+                            style={{
+                              backgroundColor: isActive ? "#D4305F" : "",
+                              color: isActive ? "white" : "",
+                            }}
+                            onClick={handleClick}
+                          >
+                            + React 
+                          </div>
+                          <div
+                            className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
+                            style={{
+                              backgroundColor: isActiveTwo ? "#D4305F" : "",
+                              color: isActiveTwo ? "white" : "",
+                            }}
+                            onClick={handleClickTwo}
+                          >
+                            + Node.js 
+                          </div>
+                          <div
+                            className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
+                            style={{
+                              backgroundColor: isActiveThree ? "#D4305F" : "",
+                              color: isActiveThree ? "white" : "",
+                            }}
+                            onClick={handleClick3}
+                          >
+                            + Angular 
+                          </div>
+                          <div
+                            className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
+                            style={{
+                              backgroundColor: isActiveFour ? "#D4305F" : "",
+                              color: isActiveFour ? "white" : "",
+                            }}
+                            onClick={handleClick4}
+                          >
+                            + Python 
+                          </div>
+                          <div
+                            className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
+                            style={{
+                              backgroundColor: isActiveFive ? "#D4305F" : "",
+                              color: isActiveFive ? "white" : "",
+                            }}
+                            onClick={handleClick5}
+                          >
+                            + Swift 
+                          </div>
+                          <div
+                            className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
+                            style={{
+                              backgroundColor: isActiveSix ? "#D4305F" : "",
+                              color: isActiveSix ? "white" : "",
+                            }}
+                            onClick={handleClick6}
+                          >
+                            + ReactNative 
+                          </div>
+                          <div
+                            className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
+                            style={{
+                              backgroundColor: isActiveSeven ? "#D4305F" : "",
+                              color: isActiveSeven ? "white" : "",
+                            }}
+                            onClick={handleClick7}
+                          >
+                            + Android 
+                          </div>
+                          <div
+                            className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
+                            style={{
+                              backgroundColor: isActiveEight ? "#D4305F" : "",
+                              color: isActiveEight ? "white" : "",
+                            }}
+                            onClick={handleClick8}
+                          >
+                            + IOS 
+                          </div>
+                          <div
+                            className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
+                            style={{
+                              backgroundColor: isActiveNine ? "#D4305F" : "",
+                              color: isActiveNine ? "white" : "",
+                            }}
+                            onClick={handleClick9}
+                          >
+                            + Java 
+                          </div>
+                          <div
+                            className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
+                            style={{
+                              backgroundColor: isActiveTen ? "#D4305F" : "",
+                              color: isActiveTen ? "white" : "",
+                            }}
+                            onClick={handleClick10}
+                          >
+                            + Ruby on Rails 
+                          </div>
+                          <div
+                            className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
+                            style={{
+                              backgroundColor: isActiveEleven ? "#D4305F" : "",
+                              color: isActiveEleven ? "white" : "",
+                            }}
+                            onClick={handleClick11}
+                          >
+                            + Go 
+                          </div>
+                          <div
+                            className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
+                            style={{
+                              backgroundColor: isActiveTwelve ? "#D4305F" : "",
+                              color: isActiveTwelve ? "white" : "",
+                            }}
+                            onClick={handleClick12}
+                          >
+                            + Vue.js 
+                          </div>
+                          <div
+                            className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
+                            style={{
+                              backgroundColor: isActiveThirteen
+                                ? "#D4305F"
+                                : "",
+                              color: isActiveThirteen ? "white" : "",
+                            }}
+                            onClick={handleClick13}
+                          >
+                            + DevOps 
+                          </div>
+                          <div
+                            className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
+                            style={{
+                              backgroundColor: isActiveFourteen
+                                ? "#D4305F"
+                                : "",
+                              color: isActiveFourteen ? "white" : "",
+                            }}
+                            onClick={handleClick14}
+                          >
+                            + PHP 
+                          </div>
+                          <div
+                            className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
+                            style={{
+                              backgroundColor: isActiveFifteen ? "#D4305F" : "",
+                              color: isActiveFifteen ? "white" : "",
+                            }}
+                            onClick={handleClick15}
+                          >
+                            + MachineLearning 
+                          </div>
+                          <div
+                            className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
+                            style={{
+                              backgroundColor: isActiveSixteen ? "#D4305F" : "",
+                              color: isActiveSixteen ? "white" : "",
+                            }}
+                            onClick={handleClick16}
+                          >
+                            + TypeScript 
+                          </div>
+                          <div
+                            className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
+                            style={{
+                              backgroundColor: isActiveSeventeen
+                                ? "#D4305F"
+                                : "",
+                              color: isActiveSeventeen ? "white" : "",
+                            }}
+                            onClick={handleClick17}
+                          >
+                            + HTML 
+                          </div>
+                          <div
+                            className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
+                            style={{
+                              backgroundColor: isActiveEighteen
+                                ? "#D4305F"
+                                : "",
+                              color: isActiveEighteen ? "white" : "",
+                            }}
+                            onClick={handleClick18}
+                          >
+                            + Javascript 
+                          </div>
+                          <div
+                            className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
+                            style={{
+                              backgroundColor: isActiveNineteen
+                                ? "#D4305F"
+                                : "",
+                              color: isActiveNineteen ? "white" : "",
+                            }}
+                            onClick={handleClick19}
+                          >
+                            + Other 
+                          </div>
+                          <div
+                            className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
+                            style={{
+                              backgroundColor: isActiveTwenty ? "#D4305F" : "",
+                              color: isActiveTwenty ? "white" : "",
+                            }}
+                            onClick={handleClick20}
+                          >
+                            + I am not sure 
                           </div>
                         </div>
                       </div>
@@ -732,10 +1007,14 @@ function TextMobileStepper() {
         <>
           <Box sx={{ pt: 2, textAlign: "center" }}>
             <Typography>
-            <img src={logo} width={250} height={250} style={{marginTop:'-100px'}} />
-        
+              <img
+                src={logo}
+                width={250}
+                height={250}
+                style={{ marginTop: "-100px" }}
+              />
             </Typography>
-            <Box sx={{ pt: 4, textAlign: "center" }}>
+            <Box sx={{ pt: 4, textAlign: "center" ,display: { xs: 'none', md: 'block' }}}>
               <Typography variant="h4" textAlign={"center"} fontWeight={"bold"}>
                 How many team members do you require?
               </Typography>
@@ -746,7 +1025,98 @@ function TextMobileStepper() {
       ),
       description: (
         <>
-          <Box sx={{ pt: 12, width: "100%", margin: "0px auto" }}>
+          <Box sx={{ pt: 12, width: "100%", margin: "0px auto" ,display: { xs: 'none', md: 'block' }}}>
+            <Typography
+              variant="h5"
+              gutterBottom
+              fontWeight={"600"}
+              color="#ccc"
+            >
+              We have <span style={{ color: "#6610F2" }}>25+</span> engineers
+              matching your criteria!
+            </Typography>
+            <Box
+              sx={{
+                width: "100%",
+                margin: "0px auto",
+                justifyContent: "center",
+                alignItems: "center",
+                marginLeft: "auto",
+                marginRight: "auto",
+                pt: 6,
+              }}
+            >
+              <Typography>
+                <Stack
+                  direction={{ xs: "column", sm: "row" }}
+                  spacing={{ xs: 1, sm: 2, md: 4 }}
+                  sx={{
+                    width: "100%",
+                    margin: "0px auto",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                  }}
+                >
+                  <MultiActionAreaCard
+                    src={
+                      "https://d29fhpw069ctt2.cloudfront.net/icon/image/73380/preview.svg"
+                    }
+                    title="One Engineer"
+                    style={{
+                      border: selCard ? "1px solid #ccc" : "",
+                      background: selCard ? "#EEF1FC" : "",
+                      // textDecoration: selCard ? "overline" : "",
+                    }}
+                    onClick={clickCard}
+                  />
+                  <MultiActionAreaCard
+                    src={
+                      "https://www.fiscal.treasury.gov/images/illustrative-icons/data-v1.svg"
+                    }
+                    title="A Small Team"
+                    style={{
+                      border: selCardOne ? "1px solid #ccc" : "",
+                      background: selCardOne ? "#EEF1FC" : "",
+                      // textDecoration: selCardOne ? "overline" : "",
+                    }}
+                    onClick={clickCardOne}
+                  />
+                  <MultiActionAreaCard
+                    src={
+                      "https://cdn4.iconfinder.com/data/icons/business-management-77/64/Big_Business-512.png"
+                    }
+                    title="A Large Team"
+                    style={{
+                      border: selCardThree ? "1px solid #ccc" : "",
+                      background: selCardThree ? "#EEF1FC" : "",
+                      // textDecoration: selCardThree ? "overline" : "",
+                    }}
+                    onClick={clickCardThree}
+                  />
+                  <MultiActionAreaCard
+                    src={
+                      "https://www.nicepng.com/png/detail/164-1647456_vaporwave-clipart-sad-sad-faces-black-and-white.png"
+                    }
+                    title="I am not sure"
+                    style={{
+                      border: selCardTwo ? "1px solid #ccc" : "",
+                      background: selCardTwo ? "#EEF1FC" : "",
+                      // textDecoration: selCardTwo ? "overline" : "",
+                    }}
+                    onClick={clickCardTwo}
+                  />
+                </Stack>
+              </Typography>
+            </Box>
+          </Box>
+          <Box 
+          sx={{ pt: 4, width: "100%", margin: "0px auto" ,display: { xs: 'block', md: 'none' },marginTop:'29px',overflow:'scroll',height:'490px'}}>
+          <Typography variant="h5" textAlign={"center"} fontWeight={"bold"}>
+                How many team members do you require?
+              </Typography>
+              <br/>
             <Typography
               variant="h5"
               gutterBottom
@@ -840,10 +1210,14 @@ function TextMobileStepper() {
         <>
           <Box sx={{ pt: 2, textAlign: "center" }}>
             <Typography>
-            <img src={logo} width={250} height={250} style={{marginTop:'-100px'}} />
-        
-                </Typography>
-            <Box sx={{ pt: 4, textAlign: "center" }}>
+              <img
+                src={logo}
+                width={250}
+                height={250}
+                style={{ marginTop: "-100px" }}
+              />
+            </Typography>
+            <Box sx={{ pt: 4, textAlign: "center" ,display: { xs: 'none', md: 'block' }}}>
               <Typography variant="h4" textAlign={"center"} fontWeight={"bold"}>
                 When do you need the developer to start?
               </Typography>
@@ -854,7 +1228,7 @@ function TextMobileStepper() {
       ),
       description: (
         <>
-          <Box sx={{ pt: 12, width: "100%", margin: "0px auto" }}>
+          <Box sx={{ pt: 12, width: "100%", margin: "0px auto",display: { xs: 'none', md: 'block' } }}>
             <Typography
               variant="h5"
               gutterBottom
@@ -862,6 +1236,103 @@ function TextMobileStepper() {
               color="#ccc"
             >
               Decide when you will start your project together!
+            </Typography>
+            <Box
+              sx={{
+                width: "100%",
+                margin: "0px auto",
+                justifyContent: "center",
+                alignItems: "center",
+                marginLeft: "auto",
+                marginRight: "auto",
+                pt: 6,
+              }}
+            >
+              <Typography>
+                <Stack
+                  direction={{ xs: "column", sm: "row" }}
+                  spacing={{ xs: 1, sm: 2, md: 4 }}
+                  sx={{
+                    width: "100%",
+                    margin: "0px auto",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                  }}
+                >
+                  <MultiActionAreaCard
+                    src={
+                      "https://cdn-icons-png.flaticon.com/512/4216/4216456.png"
+                    }
+                    title="Immediately"
+                    style={{
+                      border: selsCard ? "1px solid #ccc" : "",
+                      background: selsCard ? "#EEF1FC" : "",
+                      // textDecoration: selsCard ? "overline" : "",
+                    }}
+                    onClick={clicksCard}
+                  />
+                  <MultiActionAreaCard
+                    src={
+                      "https://cdn-icons-png.flaticon.com/512/9082/9082688.png"
+                    }
+                    title="In 1 to 2 weeks"
+                    style={{
+                      border: selsCardOne ? "1px solid #ccc" : "",
+                      background: selsCardOne ? "#EEF1FC" : "",
+                      // textDecoration: selsCardOne ? "overline" : "",
+                    }}
+                    onClick={clicksCardOne}
+                  />
+                  <MultiActionAreaCard
+                    src={
+                      "https://cdn3.iconfinder.com/data/icons/agile-3-flat-style/64/Agile-3_-_Flat_Style_-_9-18-512.png"
+                    }
+                    title=">2 weeks from now  "
+                    style={{
+                      border: selsCardThree ? "1px solid #ccc" : "",
+                      background: selsCardThree ? "#EEF1FC" : "",
+                      // textDecoration: selsCardThree ? "overline" : "",
+                    }}
+                    onClick={clicksCardThree}
+                  />
+                  <MultiActionAreaCard
+                    title="I am not sure"
+                    src={
+                      "https://www.nicepng.com/png/detail/164-1647456_vaporwave-clipart-sad-sad-faces-black-and-white.png"
+                    }
+                    style={{
+                      border: selsCardTwo ? "1px solid #ccc" : "",
+                      background: selsCardTwo ? "#EEF1FC" : "",
+                      textDecoration: selsCardTwo ? "overline" : "",
+                    }}
+                    onClick={clicksCardTwo}
+                  />
+                </Stack>
+              </Typography>
+            </Box>
+          </Box>
+          <Box sx={{ pt: 4, width: "100%", margin: "0px auto" ,display: { xs: 'block', md: 'none' },marginTop:'29px',overflow:'scroll',height:'490px'}}>
+            {/* <Typography
+              variant="h5"
+              gutterBottom
+              fontWeight={"600"}
+              color="#ccc"
+            >
+              Decide when you will start your project together!
+            </Typography> */}
+            <Typography variant="h5" textAlign={"center"} fontWeight={"bold"}>
+            When do you need the developer to start?
+              </Typography>
+              <br/>
+            <Typography
+              variant="h5"
+              gutterBottom
+              fontWeight={"600"}
+              color="#ccc"
+            >
+             Decide when you will start your project together!
             </Typography>
             <Box
               sx={{
@@ -947,15 +1418,20 @@ function TextMobileStepper() {
         <>
           <Box sx={{ pt: 2, textAlign: "center" }}>
             <Typography>
-            <img src={logo} width={250} height={250} style={{marginTop:'-100px'}} />
-             </Typography>
+              <img
+                src={logo}
+                width={250}
+                height={250}
+                style={{ marginTop: "-100px" }}
+              />
+            </Typography>
           </Box>
         </>
       ),
       description: (
         <>
-          <Box sx={{ pt: 1, width: "100%", margin: "0px auto" }}>
-            <StartSignUp handleNext={handleNext}  />
+          <Box sx={{ pt: 1, width: "100%", margin: "0px auto" ,marginTop:'29px',overflow:'scroll',height:'490px'}}>
+            <StartSignUp handleNext={handleNext} />
           </Box>
         </>
       ),
@@ -965,15 +1441,19 @@ function TextMobileStepper() {
         <>
           <Box sx={{ pt: 2, textAlign: "center" }}>
             <Typography>
-            <img src={logo} width={250} height={250} style={{marginTop:'-100px'}} />
-        
-              </Typography>
+              <img
+                src={logo}
+                width={250}
+                height={250}
+                style={{ marginTop: "-100px" }}
+              />
+            </Typography>
           </Box>
         </>
       ),
       description: (
         <>
-          <Box sx={{ pt: 1, width: "100%", margin: "0px auto" }}>
+          <Box sx={{ pt: 1, width: "100%", margin: "0px auto" ,marginTop:'29px',overflow:'scroll',height:'490px'}}>
             <StartSchedule />
           </Box>
         </>
@@ -984,13 +1464,30 @@ function TextMobileStepper() {
   const maxSteps = steps.length;
 
   return (
-    <Box
-      sx={{
-        maxWidth: 1500,
+    <div
+    // className="stepContainer"
+    sx={{
+        maxWidth: '100%',
         flexGrow: 1,
         textAlign: "center",
         margin: "0px auto",
+        // position:'fixed !important',
+        // overflow:'scroll !important',
+        marginLeft:'auto',
+        marginRight:'auto',
+        width:'100%',
+        alignItems:'center',
+        justifyContent:'center',
+        height:'100%',
+        marginTop:'55%',
+        overflow:'hidden !important'
       }}
+    >
+
+    <Box
+      // sx={{   position:'fixed',
+      //   overflow:'scroll', marginLeft: "-25%",}}
+      sx={{ overflow:'hidden !important'}}
     >
       <Paper
         square
@@ -999,9 +1496,10 @@ function TextMobileStepper() {
           display: "flex",
           justifyContent: "center",
           height: 50,
-          bgcolor: "background.default",
+          backgroundColor:'#FFFBF0',
           maxWidth: 1500,
           margin: "0px auto",
+          boxShadow:'10px 5px 10px #eee'
         }}
       >
         <Typography>{steps[activeStep].label}</Typography>
@@ -1015,15 +1513,18 @@ function TextMobileStepper() {
           display: "flex",
           justifyContent: "center",
           margin: "0px auto",
+          // overflow:'scroll',
+          backgroundColor:'#FFFBF0'
         }}
-      >
+      >             
         {steps[activeStep].description}
       </Box>
-      <Box sx={{ pt: 16 }}>
+      <Box sx={{ pt: 16, backgroundColor:'#FFFBF0' }}>
         <MobileStepper
           variant="text"
+          sx={{ backgroundColor:'#FFFBF0',boxShadow:'10px 5px 10px #eee'}}
           steps={maxSteps}
-          position="static"
+          position="static" 
           activeStep={activeStep}
           nextButton={
             <Button
@@ -1056,6 +1557,7 @@ function TextMobileStepper() {
         />
       </Box>
     </Box>
+    </div>
   );
 }
 

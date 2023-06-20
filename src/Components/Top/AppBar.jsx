@@ -14,39 +14,14 @@ function CollapsibleExample() {
           <img src={logo} width={300} height={300} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
+        <Navbar.Collapse id="responsive-navbar-nav" style={{backgroundColor:'#FFFBF0'}}>
           <Nav className="me-auto">
             <Nav.Link href="">About</Nav.Link>
             <Nav.Link href="">Skill</Nav.Link>
             <Nav.Link href="">Process</Nav.Link>
             <Nav.Link href="">Blog</Nav.Link>
-            {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="">Action</NavDropdown.Item>
-              <NavDropdown.Item href="">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown> */}
           </Nav>
           <Nav>
-            {/* <Nav.Link style={{  }}>
-            <Link
-              style={{
-                textDecoration: "none",
-                color: "#000",
-                lineHeight: "32px",
-                marginTop: "12px",
-                cursor:'pointer'
-              }}
-              to={"/applyforjob"}
-            >
-              Apply as a Developer
-            </Link>
-              </Nav.Link> */}
             <Nav.Link eventKey={2}>
               <button className="davFMk">
                 <Link

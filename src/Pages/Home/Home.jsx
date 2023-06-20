@@ -1,5 +1,6 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
+import Divider from '@mui/material/Divider';
 import {
   One,
   Two,
@@ -16,11 +17,11 @@ import {
   c3,
   c4,
   c5,
-  c6
+  c6,
 } from "../../Images";
+import logo from "../../Images/logo.png";
 import { Image } from "react-bootstrap";
-import { Stack, Avatar, Typography, Container } from "@mui/material";
-
+import { Stack, Avatar, Typography, Container, Box } from "@mui/material";
 
 function Home() {
   return (
@@ -378,6 +379,7 @@ function Home() {
                           color: "#fff",
                           padding: "20px 40px",
                           background: "#D4305F",
+                          marginLeft:'-120px'
                         }}
                       >
                         <Link to={"/start"} style={{ color: "#fff" }}>
@@ -1444,111 +1446,128 @@ function Home() {
                     </a>
                   </div>
                 </div> */}
-                <Container 
-                >
-                        <Stack direction="row" spacing={6}>
-                        <Image
-                            alt="Java developer remotely at Qume"
-                            src={c1}
-                            decoding="async"
-                            data-nimg="fill"
-                            style={{ width: "160px", height: "160px" }}
-                            className="oimg"
-                            />
-                        <Image
-                            alt="Java developer remotely at Qume"
-                            src={c2}
-                            decoding="async"
-                            data-nimg="fill"
-                            style={{ width: "160px", height: "160px" }}
-                            className="oimg"
-                            />
-                         
-                        <Image
-                            alt="Java developer remotely at Qume"
-                            src={c3}
-                            decoding="async"
-                            data-nimg="fill"
-                            style={{ width: "160px", height: "60px",marginTop:'50px' }}
-                            className="oimg"
-                            />
-                        <Image
-                            alt="Java developer remotely at Qume"
-                            src={c4}
-                            decoding="async"
-                            data-nimg="fill"
-                            style={{ width: "160px", height: "60px",marginTop:'50px' }}
-                            className="oimg"
-                            />
-                         
-                        <Image
-                            alt="Java developer remotely at Qume"
-                            src={c5}
-                            decoding="async"
-                            data-nimg="fill"
-                            style={{ width: "160px", height: "160px" }}
-                            className="oimg"
-                            />
-                         
-                        <Image
-                            alt="Java developer remotely at Qume"
-                            src={"https://remotebase.com/images/overview/qume.svg"}
-                            decoding="async"
-                            data-nimg="fill"
-                            style={{ width: "160px", height: "160px" }}
-                            className="oimg"
-                            />
-                         
-                        </Stack>
-                 
-                      </Container>
-<br/>
-                <Container 
-                >
-                        <Stack direction="row" spacing={6}>
-                        <Image
-                            alt="Java developer remotely at Qume"
-                            src={c6}
-                            decoding="async"
-                            data-nimg="fill"
-                            style={{ width: "160px", height: "160px" }}
-                            className="oimg"
-                            />
-                        <Image
-                            alt="Java developer remotely at Qume"
-                            src={'https://remotebase.com/images/overview/spacetrics.svg'}
-                            decoding="async"
-                            data-nimg="fill"
-                            style={{ width: "160px", height: "160px" }}
-                            className="oimg"
-                            />
-                        <Image
-                            alt="Java developer remotely at Qume"
-                            src={'https://remotebase.com/images/overview/atoms.svg'}
-                            decoding="async"
-                            data-nimg="fill"
-                            style={{ width: "160px", height: "160px" }}
-                            className="oimg"
-                            />
-                         
-                        <Image
-                            alt="Java developer remotely at Qume"
-                            src={"https://remotebase.com/images/overview/laskie.svg"}
-                            decoding="async"
-                            data-nimg="fill"
-                            style={{ width: "160px", height: "60px",marginTop:'50px' }}
-                            className="oimg"
-                            />
-                        <Image
-                            alt="Java developer remotely at Qume"
-                            src={"https://remotebase.com/images/overview/swvl.svg"}
-                            decoding="async"
-                            data-nimg="fill"
-                            style={{ width: "160px", height: "60px",marginTop:'50px' }}
-                            className="oimg"
-                            />
-                         
-                        {/* <Image
+                <Box sx={{ display: { xs: "none", md: "block" } }}>
+                  <Container>
+                    <Stack direction="row" spacing={6}>
+                      <Image
+                        alt="Java developer remotely at Qume"
+                        src={c1}
+                        decoding="async"
+                        data-nimg="fill"
+                        style={{ width: "160px", height: "160px" }}
+                        className="oimg"
+                      />
+                      <Image
+                        alt="Java developer remotely at Qume"
+                        src={c2}
+                        decoding="async"
+                        data-nimg="fill"
+                        style={{ width: "160px", height: "160px" }}
+                        className="oimg"
+                      />
+
+                      <Image
+                        alt="Java developer remotely at Qume"
+                        src={c3}
+                        decoding="async"
+                        data-nimg="fill"
+                        style={{
+                          width: "160px",
+                          height: "60px",
+                          marginTop: "50px",
+                        }}
+                        className="oimg"
+                      />
+                      <Image
+                        alt="Java developer remotely at Qume"
+                        src={c4}
+                        decoding="async"
+                        data-nimg="fill"
+                        style={{
+                          width: "160px",
+                          height: "60px",
+                          marginTop: "50px",
+                        }}
+                        className="oimg"
+                      />
+
+                      <Image
+                        alt="Java developer remotely at Qume"
+                        src={c5}
+                        decoding="async"
+                        data-nimg="fill"
+                        style={{ width: "160px", height: "160px" }}
+                        className="oimg"
+                      />
+
+                      <Image
+                        alt="Java developer remotely at Qume"
+                        src={"https://remotebase.com/images/overview/qume.svg"}
+                        decoding="async"
+                        data-nimg="fill"
+                        style={{ width: "160px", height: "160px" }}
+                        className="oimg"
+                      />
+                    </Stack>
+                  </Container>
+                  <br />
+                  <Container>
+                    <Stack direction="row" spacing={6}>
+                      <Image
+                        alt="Java developer remotely at Qume"
+                        src={c6}
+                        decoding="async"
+                        data-nimg="fill"
+                        style={{ width: "160px", height: "160px" }}
+                        className="oimg"
+                      />
+                      <Image
+                        alt="Java developer remotely at Qume"
+                        src={
+                          "https://remotebase.com/images/overview/spacetrics.svg"
+                        }
+                        decoding="async"
+                        data-nimg="fill"
+                        style={{ width: "160px", height: "160px" }}
+                        className="oimg"
+                      />
+                      <Image
+                        alt="Java developer remotely at Qume"
+                        src={"https://remotebase.com/images/overview/atoms.svg"}
+                        decoding="async"
+                        data-nimg="fill"
+                        style={{ width: "160px", height: "160px" }}
+                        className="oimg"
+                      />
+
+                      <Image
+                        alt="Java developer remotely at Qume"
+                        src={
+                          "https://remotebase.com/images/overview/laskie.svg"
+                        }
+                        decoding="async"
+                        data-nimg="fill"
+                        style={{
+                          width: "160px",
+                          height: "60px",
+                          marginTop: "50px",
+                        }}
+                        className="oimg"
+                      />
+                      <Image
+                        alt="Java developer remotely at Qume"
+                        src={"https://remotebase.com/images/overview/swvl.svg"}
+                        decoding="async"
+                        data-nimg="fill"
+                        style={{
+                          width: "160px",
+                          height: "60px",
+                          marginTop: "50px",
+                        }}
+                        className="oimg"
+                      />
+
+                      {/* <Image
                             alt="Java developer remotely at Qume"
                             src={"https://remotebase.com/images/overview/neyborly.svg"}
                             decoding="async"
@@ -1557,38 +1576,170 @@ function Home() {
                             className="oimg"
                             />
                           */}
-                        <Image
+                      <Image
+                        alt="Java developer remotely at Qume"
+                        src={"https://remotebase.com/images/overview/lugg.svg"}
+                        decoding="async"
+                        data-nimg="fill"
+                        style={{ width: "160px", height: "160px" }}
+                        className="oimg"
+                      />
+                    </Stack>
+                  </Container>
+                  <br />
+                </Box>
+                <Box sx={{ display: { xs: "block", md: "none" } }}>
+                  <Container>
+                    <Stack direction="row" spacing={2}>
+                      <Image
+                        alt="Java developer remotely at Qume"
+                        src={c1}
+                        decoding="async"
+                        data-nimg="fill"
+                        style={{ width: "120px", height: "110px" }}
+                        className="oimg"
+                      />
+                      <Image
+                        alt="Java developer remotely at Qume"
+                        src={c2}
+                        decoding="async"
+                        data-nimg="fill"
+                        style={{ width: "120px", height: "120px" }}
+                        className="oimg"
+                      />
+                      </Stack>
+                      <Stack direction="row" spacing={2}>
+                      <Image
+                        alt="Java developer remotely at Qume"
+                        src={c3}
+                        decoding="async"
+                        data-nimg="fill"
+                        style={{
+                          width: "120px",
+                          height: "40px",
+                          marginTop: "50px",
+                        }}
+                        className="oimg"
+                      />
+                      <Image
+                        alt="Java developer remotely at Qume"
+                        src={c4}
+                        decoding="async"
+                        data-nimg="fill"
+                        style={{
+                          width: "120px",
+                          height: "40px",
+                          marginTop: "50px",
+                        }}
+                        className="oimg"
+                      />
+                      </Stack>
+                      <br/>
+                      <br/>
+                      <Stack direction="row" spacing={2}>
+                      <Image
+                        alt="Java developer remotely at Qume"
+                        src={c5}
+                        decoding="async"
+                        data-nimg="fill"
+                        style={{ width: "120px", height: "120px" }}
+                        className="oimg"
+                      />
+
+                      <Image
+                        alt="Java developer remotely at Qume"
+                        src={"https://remotebase.com/images/overview/qume.svg"}
+                        decoding="async"
+                        data-nimg="fill"
+                        style={{ width: "120px", height: "120px" }}
+                        className="oimg"
+                      />
+                    </Stack>
+                  </Container>
+                  <br />
+                  <Container>
+                    <Stack direction="row" spacing={2}>
+                   
+                      {/* <Image
+                        alt="Java developer remotely at Qume"
+                        src={c6}
+                        decoding="async"
+                        data-nimg="fill"
+                        style={{ width: "120px", height: "120px" }}
+                        className="oimg"
+                      
+                      /> */}
+                      <Image
+                        alt="Java developer remotely at Qume"
+                        src={
+                          "https://remotebase.com/images/overview/spacetrics.svg"
+                        }
+                        decoding="async"
+                        data-nimg="fill"
+                        style={{ width: "120px", height: "120px",marginLeft:'80px' }}
+                        className="oimg"
+                      />
+                      </Stack>
+                      <Stack direction="row" spacing={2}>
+                      <Image
+                        alt="Java developer remotely at Qume"
+                        src={"https://remotebase.com/images/overview/atoms.svg"}
+                        decoding="async"
+                        data-nimg="fill"
+                        style={{ width: "120px", height: "120px" }}
+                        className="oimg"
+                      />
+
+                      <Image
+                        alt="Java developer remotely at Qume"
+                        src={
+                          "https://remotebase.com/images/overview/laskie.svg"
+                        }
+                        decoding="async"
+                        data-nimg="fill"
+                        style={{
+                          width: "160px",
+                          height: "60px",
+                          marginTop: "50px",
+                        }}
+                        className="oimg"
+                      />
+                      </Stack>
+                      <Stack direction="row" spacing={2}>
+                      <Image
+                        alt="Java developer remotely at Qume"
+                        src={"https://remotebase.com/images/overview/swvl.svg"}
+                        decoding="async"
+                        data-nimg="fill"
+                        style={{
+                          width: "120px",
+                          height: "40px",
+                          marginTop: "50px",
+                        }}
+                        className="oimg"
+                      />
+
+                      {/* <Image
                             alt="Java developer remotely at Qume"
-                            src={"https://remotebase.com/images/overview/lugg.svg"}
+                            src={"https://remotebase.com/images/overview/neyborly.svg"}
                             decoding="async"
                             data-nimg="fill"
                             style={{ width: "160px", height: "160px" }}
                             className="oimg"
                             />
-                         
-                        </Stack>
-                 
-                      </Container>
-<br/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                          */}
+                      <Image
+                        alt="Java developer remotely at Qume"
+                        src={"https://remotebase.com/images/overview/lugg.svg"}
+                        decoding="async"
+                        data-nimg="fill"
+                        style={{ width: "120px", height: "120px" }}
+                        className="oimg"
+                      />
+                    </Stack>
+                  </Container>
+                  <br />
+                </Box>
               </div>
             </div>
             <div
@@ -2046,7 +2197,8 @@ function Home() {
                     </p>
                   </div>
                 </div>
-                <div
+<Box sx={{display: { xs: 'none', md: 'block' }}}>
+<div
                   className="styles__AnalyticsGrid-sc-im1wum-4 igPuNw"
                   style={{
                     marginLeft: "auto",
@@ -2056,6 +2208,8 @@ function Home() {
                     display: "flex",
                   }}
                 >
+
+
                   <div
                     className="styles__AnalyticsCard-sc-im1wum-5 cDpBhC aos-item"
                     data-aos="fade-up"
@@ -2126,7 +2280,115 @@ function Home() {
                       Customers
                     </div>
                   </div>
+
+
+
+
                 </div>
+</Box>
+<Box sx={{display: { xs: 'block', md: 'none' }}}>
+<div
+                  className="styles__AnalyticsGrid-sc-im1wum-4 igPuNw"
+                  style={{
+                    marginLeft: "auto",
+                    width: "100%",
+                    marginRight: "auto",
+                    verticalAlign: "center",
+                    // display: "flex",
+                  }}
+                >
+
+
+                  <div
+                    className="styles__AnalyticsCard-sc-im1wum-5 cDpBhC aos-item"
+                    data-aos="fade-up"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay={200}
+                    data-aos-offset={0}
+                  >
+                    <div className="styles__AnalyticsNumber-sc-im1wum-6 bwBzwx">
+                      50+
+                    </div>
+                    <div className="styles__AnalyticsText-sc-im1wum-7 CBfAC">
+                      Happy clients
+                    </div>
+                  </div>
+                  <div
+                    className="styles__AnalyticsCard-sc-im1wum-5 cDpBhC aos-item"
+                    data-aos="fade-up"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay={350}
+                    data-aos-offset={0}
+                  >
+                    <div className="styles__AnalyticsNumber-sc-im1wum-6 bwBzwx">
+                      6+
+                    </div>
+                    <div className="styles__AnalyticsText-sc-im1wum-7 CBfAC">
+                      Countries
+                    </div>
+                  </div>
+                  
+                  {/* <div>
+                    <Box sx={{height:'10px',width:'100%',backgroundColor:'#F4F7FF'}}></Box>
+                  </div> */}
+                  <Divider/>
+                  <div
+                    className="styles__AnalyticsCard-sc-im1wum-5 cDpBhC aos-item"
+                    data-aos="fade-up"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay={500}
+                    data-aos-offset={0}
+                  >
+                    <div className="styles__AnalyticsNumber-sc-im1wum-6 bwBzwx">
+                      20+
+                    </div>
+                    <div className="styles__AnalyticsText-sc-im1wum-7 CBfAC">
+                      Technologies
+                    </div>
+                  </div>
+                  <div
+                    className="styles__AnalyticsCard-sc-im1wum-5 cDpBhC aos-item"
+                    data-aos="fade-up"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay={650}
+                    data-aos-offset={0}
+                  >
+                    <div className="styles__AnalyticsNumber-sc-im1wum-6 bwBzwx">
+                      6+
+                    </div>
+                    <div className="styles__AnalyticsText-sc-im1wum-7 CBfAC">
+                      years of experience.
+                    </div>
+                  </div>
+                  {/* <div>
+                  <Box sx={{height:'10px',width:'100%',backgroundColor:'#F4F7FF'}}></Box>
+                  </div> */}
+                  <Divider/>
+                  <div
+                    className="styles__AnalyticsCard-sc-im1wum-5 cDpBhC aos-item"
+                    data-aos="fade-up"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay={800}
+                    data-aos-offset={0}
+                  >
+                    <div className="styles__AnalyticsNumber-sc-im1wum-6 bwBzwx">
+                      50+
+                    </div>
+                    <div className="styles__AnalyticsText-sc-im1wum-7 CBfAC">
+                      Customers
+                    </div>
+                  </div>
+
+
+
+
+                </div>
+</Box>
+
+              
+
+
+
                 <div
                   className="styles__HireBtnCanvas-sc-im1wum-8 jrmGbO aos-item"
                   data-aos="fade-up"
@@ -4394,7 +4656,7 @@ function Home() {
                     href="/"
                     className="styles__FooterLogo-sc-1xf49c1-3 cLVWLX"
                   >
-                    <span
+                    {/* <span
                       style={{
                         boxSizing: "border-box",
                         display: "block",
@@ -4415,7 +4677,7 @@ function Home() {
                     >
                       <img
                         alt="Remotebase Logo"
-                        src="https://remotebase.com/_next/image?url=%2Fimages%2Frb-logo.png&w=1920&q=100"
+                        src="https://www.leveluptechstudios.com/static/media/logo.c9be7256c88cd7559a8c.png"
                         decoding="async"
                         data-nimg="fill"
                         style={{
@@ -4429,8 +4691,8 @@ function Home() {
                           border: "none",
                           margin: "auto",
                           display: "block",
-                          width: 0,
-                          height: 0,
+                          width: 80,
+                          height: 80,
                           minWidth: "100%",
                           maxWidth: "100%",
                           minHeight: "100%",
@@ -4463,7 +4725,12 @@ function Home() {
                         min-width: 100%; max-width: 100%; min-height: 100%;
                         max-height: 100%; " loading="lazy" /&gt;
                       </noscript>
-                    </span>
+                    </span> */}
+                    <Box sx={{display:{xs:'none',md:"block"}}}>
+
+                    <img src={logo} width={400} height={400} style={{marginTop:'-160px'}}  />
+                    </Box>
+
                   </a>
                   <div className="styles__FooterMenu-sc-1xf49c1-4 AYQtR">
                     <a
