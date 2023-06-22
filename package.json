@@ -6,6 +6,7 @@
     "@ant-design/icons": "^5.0.1",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@formspree/react": "^2.4.2",
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.2",
     "@mui/styles": "^5.11.2",

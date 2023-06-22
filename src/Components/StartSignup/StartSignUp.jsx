@@ -13,28 +13,11 @@ import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { SnackbarProvider, useSnackbar } from "notistack";
-
-function Copyright(props) {
-  return (
-    <Typography
-      variant="body2"
-      color="text.secondary"
-      align="center"
-      {...props}
-    >
-      {"Copyright © "}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </Typography>
-  );
-}
+import { useForm, ValidationError } from "@formspree/react";
 
 const theme = createTheme();
 
-function Success({next}) {
+function Success({ next }) {
   const { enqueueSnackbar } = useSnackbar();
 
   const handleClick = () => {
@@ -45,8 +28,7 @@ function Success({next}) {
     // variant could be success, error, warning, info, or default
     enqueueSnackbar("Successfully sumbit your request!", { variant });
     setTimeout(() => {
-      next()
-      
+      next();
     }, 3000);
   };
 
@@ -60,6 +42,7 @@ function Success({next}) {
         variant="contained"
         sx={{ mt: 3, mb: 2 }}
         onClick={handleClickVariant("success")}
+        // disabled={state.submitting}
       >
         Connect me with talent
       </Button>
@@ -67,7 +50,7 @@ function Success({next}) {
   );
 }
 
-export default function StartSignUp({handleNext}) {
+export default function StartSignUp({ handleNext }) {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -76,8 +59,10 @@ export default function StartSignUp({handleNext}) {
       password: data.get("password"),
     });
   };
-
-
+  const [formstate, handleFormSubmit] = useForm("xdovqqqk");
+  if (formstate.succeeded) {
+    return <p>Thanks for joining!</p>;
+  }
   return (
     <ThemeProvider theme={theme}>
       <Grid container component="main" sx={{ height: "40vh" }}>
@@ -99,7 +84,7 @@ export default function StartSignUp({handleNext}) {
             <Box
               component="form"
               noValidate
-              onSubmit={handleSubmit}
+              onSubmit={handleFormSubmit}
               sx={{ mt: 1 }}
             >
               <TextField
@@ -133,7 +118,7 @@ export default function StartSignUp({handleNext}) {
               <TextField
                 margin="normal"
                 fullWidth
-                id="number"
+                id="num"
                 label="Contact Number"
                 name="number"
                 autoComplete="number"

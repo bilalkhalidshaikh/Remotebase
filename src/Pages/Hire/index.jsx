@@ -423,10 +423,22 @@ function TextMobileStepper() {
       label: (
         <>
           <Box sx={{ pt: 2, textAlign: "center" }}>
-            <div style={{background:'transparent',marginTop:'-10px'}}>
-              <img src={logo} width={300} height={300} style={{marginTop:'-70px'}} />
+            <div style={{ background: "transparent", marginTop: "-10px" }}>
+              <img
+                src={logo}
+                width={300}
+                height={300}
+                style={{ marginTop: "-70px" }}
+              />
             </div>
-            <Box sx={{ pt: 4, textAlign: "center", marginTop:'-60px',display: { xs: 'none', md: 'block' }  }}>
+            <Box
+              sx={{
+                pt: 4,
+                textAlign: "center",
+                marginTop: "-60px",
+                display: { xs: "none", md: "block" },
+              }}
+            >
               <Typography variant="h4" textAlign={"center"} fontWeight={"bold"}>
                 Hire Your Dream Developer Team Now
               </Typography>
@@ -439,19 +451,34 @@ function TextMobileStepper() {
       ),
       description: (
         <>
-          <Box sx={{ pt: 7, width: "100%", margin: "0px auto",display: { xs: 'none', md: 'block' } }}>
+          <Box
+            sx={{
+              pt: 7,
+              width: "100%",
+              margin: "0px auto",
+              display: { xs: "none", md: "block" },
+            }}
+          >
             <Typography
               variant="body1"
               gutterBottom
               fontWeight={"400"}
-              style={{ color: "#000",height:'120px' }}
+              style={{ color: "#000", height: "120px" }}
             >
               Get a world-class team of the top 1% of remote software developers
               within 24 hours and accelerate your tech hiring process. Enjoy a
               2-week free trial and work with the best developer talent for two
               weeks without paying any upfront charges.
             </Typography>
-            <Box className="skill_contain" sx={{ pt: 4 ,overflow:'scroll',position:'fixed',height:'320px'}} >
+            <Box
+              // className="skill_contain"
+              sx={{
+                pt: 1,
+                // overflow: "scroll",
+                position: "fixed",
+                height: "320px",
+              }}
+            >
               <div className="styles__SkillsWrapper-sc-s0b09o-0 gIDjoE">
                 <div className="styles__Container-sc-s0b09o-1 fmsQUU">
                   <div className="styles__SkillsCanvas-sc-s0b09o-2 fbJaPV">
@@ -497,7 +524,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClickOne}
                           >
-                            + CSS 
+                            + CSS
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -507,7 +534,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick}
                           >
-                            + React 
+                            + React
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -517,7 +544,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClickTwo}
                           >
-                            + Node.js 
+                            + Node.js
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -527,7 +554,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick3}
                           >
-                            + Angular 
+                            + Angular
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -537,7 +564,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick4}
                           >
-                            + Python 
+                            + Python
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -547,7 +574,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick5}
                           >
-                            + Swift 
+                            + Swift
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -557,7 +584,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick6}
                           >
-                            + ReactNative 
+                            + ReactNative
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -567,7 +594,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick7}
                           >
-                            + Android 
+                            + Android
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -577,7 +604,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick8}
                           >
-                            + IOS 
+                            + IOS
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -587,7 +614,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick9}
                           >
-                            + Java 
+                            + Java
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -597,7 +624,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick10}
                           >
-                            + Ruby on Rails 
+                            + Ruby on Rails
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -607,7 +634,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick11}
                           >
-                            + Go 
+                            + Go
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -617,7 +644,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick12}
                           >
-                            + Vue.js 
+                            + Vue.js
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -629,7 +656,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick13}
                           >
-                            + DevOps 
+                            + DevOps
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -641,7 +668,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick14}
                           >
-                            + PHP 
+                            + PHP
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -651,7 +678,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick15}
                           >
-                            + MachineLearning 
+                            + MachineLearning
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -661,7 +688,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick16}
                           >
-                            + TypeScript 
+                            + TypeScript
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -673,7 +700,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick17}
                           >
-                            + HTML 
+                            + HTML
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -685,7 +712,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick18}
                           >
-                            + Javascript 
+                            + Javascript
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -697,7 +724,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick19}
                           >
-                            + Other 
+                            + Other
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -707,7 +734,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick20}
                           >
-                            + I am not sure 
+                            + I am not sure
                           </div>
                         </div>
                       </div>
@@ -717,7 +744,14 @@ function TextMobileStepper() {
               </div>
             </Box>
           </Box>
-          <Box sx={{ pt: 7, width: "100%", margin: "0px auto",display: { xs: 'block', md: 'none' } }}>
+          <Box
+            sx={{
+              pt: 7,
+              width: "100%",
+              margin: "0px auto",
+              display: { xs: "block", md: "none" },
+            }}
+          >
             {/* <Typography
               variant="body1"
               gutterBottom
@@ -730,10 +764,23 @@ function TextMobileStepper() {
               2-week free trial and work with the best developer talent for two
               weeks without paying any upfront charges.
             </Typography> */}
-            <Typography variant="h5" textAlign={"center"} fontWeight={"bold"} sx={{marginTop:'45px'}}>
-                Hire Your Dream Developer Team Now
-              </Typography>
-            <Box className="skill_contain" sx={{ pt: 1 ,overflow:'scroll',position:'fixed',height:'280px'}} >
+            <Typography
+              variant="h5"
+              textAlign={"center"}
+              fontWeight={"bold"}
+              sx={{ marginTop: "45px" }}
+            >
+              Hire Your Dream Developer Team Now
+            </Typography>
+            <Box
+              className="skill_contain"
+              sx={{
+                pt: 1,
+                overflow: "scroll",
+                position: "fixed",
+                height: "280px",
+              }}
+            >
               <div className="styles__SkillsWrapper-sc-s0b09o-0 gIDjoE">
                 <div className="styles__Container-sc-s0b09o-1 fmsQUU">
                   <div className="styles__SkillsCanvas-sc-s0b09o-2 fbJaPV">
@@ -779,7 +826,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClickOne}
                           >
-                            + CSS 
+                            + CSS
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -789,7 +836,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick}
                           >
-                            + React 
+                            + React
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -799,7 +846,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClickTwo}
                           >
-                            + Node.js 
+                            + Node.js
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -809,7 +856,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick3}
                           >
-                            + Angular 
+                            + Angular
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -819,7 +866,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick4}
                           >
-                            + Python 
+                            + Python
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -829,7 +876,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick5}
                           >
-                            + Swift 
+                            + Swift
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -839,7 +886,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick6}
                           >
-                            + ReactNative 
+                            + ReactNative
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -849,7 +896,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick7}
                           >
-                            + Android 
+                            + Android
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -859,7 +906,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick8}
                           >
-                            + IOS 
+                            + IOS
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -869,7 +916,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick9}
                           >
-                            + Java 
+                            + Java
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -879,7 +926,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick10}
                           >
-                            + Ruby on Rails 
+                            + Ruby on Rails
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -889,7 +936,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick11}
                           >
-                            + Go 
+                            + Go
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -899,7 +946,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick12}
                           >
-                            + Vue.js 
+                            + Vue.js
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -911,7 +958,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick13}
                           >
-                            + DevOps 
+                            + DevOps
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -923,7 +970,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick14}
                           >
-                            + PHP 
+                            + PHP
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -933,7 +980,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick15}
                           >
-                            + MachineLearning 
+                            + MachineLearning
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -943,7 +990,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick16}
                           >
-                            + TypeScript 
+                            + TypeScript
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -955,7 +1002,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick17}
                           >
-                            + HTML 
+                            + HTML
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -967,7 +1014,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick18}
                           >
-                            + Javascript 
+                            + Javascript
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -979,7 +1026,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick19}
                           >
-                            + Other 
+                            + Other
                           </div>
                           <div
                             className="styles__ExpertiseBadge-sc-s0b09o-12 GWGSk"
@@ -989,7 +1036,7 @@ function TextMobileStepper() {
                             }}
                             onClick={handleClick20}
                           >
-                            + I am not sure 
+                            + I am not sure
                           </div>
                         </div>
                       </div>
@@ -1014,7 +1061,13 @@ function TextMobileStepper() {
                 style={{ marginTop: "-100px" }}
               />
             </Typography>
-            <Box sx={{ pt: 4, textAlign: "center" ,display: { xs: 'none', md: 'block' }}}>
+            <Box
+              sx={{
+                pt: 4,
+                textAlign: "center",
+                display: { xs: "none", md: "block" },
+              }}
+            >
               <Typography variant="h4" textAlign={"center"} fontWeight={"bold"}>
                 How many team members do you require?
               </Typography>
@@ -1025,7 +1078,14 @@ function TextMobileStepper() {
       ),
       description: (
         <>
-          <Box sx={{ pt: 12, width: "100%", margin: "0px auto" ,display: { xs: 'none', md: 'block' }}}>
+          <Box
+            sx={{
+              pt: 12,
+              width: "100%",
+              margin: "0px auto",
+              display: { xs: "none", md: "block" },
+            }}
+          >
             <Typography
               variant="h5"
               gutterBottom
@@ -1043,7 +1103,7 @@ function TextMobileStepper() {
                 alignItems: "center",
                 marginLeft: "auto",
                 marginRight: "auto",
-                pt: 6,
+                pt: 12,
               }}
             >
               <Typography>
@@ -1111,12 +1171,21 @@ function TextMobileStepper() {
               </Typography>
             </Box>
           </Box>
-          <Box 
-          sx={{ pt: 4, width: "100%", margin: "0px auto" ,display: { xs: 'block', md: 'none' },marginTop:'29px',overflow:'scroll',height:'490px'}}>
-          <Typography variant="h5" textAlign={"center"} fontWeight={"bold"}>
-                How many team members do you require?
-              </Typography>
-              <br/>
+          <Box
+            sx={{
+              pt: 4,
+              width: "100%",
+              margin: "0px auto",
+              display: { xs: "block", md: "none" },
+              marginTop: "29px",
+              overflow: "scroll",
+              height: "490px",
+            }}
+          >
+            <Typography variant="h5" textAlign={"center"} fontWeight={"bold"}>
+              How many team members do you require?
+            </Typography>
+            <br />
             <Typography
               variant="h5"
               gutterBottom
@@ -1217,7 +1286,13 @@ function TextMobileStepper() {
                 style={{ marginTop: "-100px" }}
               />
             </Typography>
-            <Box sx={{ pt: 4, textAlign: "center" ,display: { xs: 'none', md: 'block' }}}>
+            <Box
+              sx={{
+                pt: 4,
+                textAlign: "center",
+                display: { xs: "none", md: "block" },
+              }}
+            >
               <Typography variant="h4" textAlign={"center"} fontWeight={"bold"}>
                 When do you need the developer to start?
               </Typography>
@@ -1228,7 +1303,14 @@ function TextMobileStepper() {
       ),
       description: (
         <>
-          <Box sx={{ pt: 12, width: "100%", margin: "0px auto",display: { xs: 'none', md: 'block' } }}>
+          <Box
+            sx={{
+              pt: 12,
+              width: "100%",
+              margin: "0px auto",
+              display: { xs: "none", md: "block" },
+            }}
+          >
             <Typography
               variant="h5"
               gutterBottom
@@ -1245,7 +1327,7 @@ function TextMobileStepper() {
                 alignItems: "center",
                 marginLeft: "auto",
                 marginRight: "auto",
-                pt: 6,
+                pt: 12,
               }}
             >
               <Typography>
@@ -1313,7 +1395,17 @@ function TextMobileStepper() {
               </Typography>
             </Box>
           </Box>
-          <Box sx={{ pt: 4, width: "100%", margin: "0px auto" ,display: { xs: 'block', md: 'none' },marginTop:'29px',overflow:'scroll',height:'490px'}}>
+          <Box
+            sx={{
+              pt: 4,
+              width: "100%",
+              margin: "0px auto",
+              display: { xs: "block", md: "none" },
+              marginTop: "29px",
+              overflow: "scroll",
+              height: "490px",
+            }}
+          >
             {/* <Typography
               variant="h5"
               gutterBottom
@@ -1323,16 +1415,16 @@ function TextMobileStepper() {
               Decide when you will start your project together!
             </Typography> */}
             <Typography variant="h5" textAlign={"center"} fontWeight={"bold"}>
-            When do you need the developer to start?
-              </Typography>
-              <br/>
+              When do you need the developer to start?
+            </Typography>
+            <br />
             <Typography
               variant="h5"
               gutterBottom
               fontWeight={"600"}
               color="#ccc"
             >
-             Decide when you will start your project together!
+              Decide when you will start your project together!
             </Typography>
             <Box
               sx={{
@@ -1430,7 +1522,17 @@ function TextMobileStepper() {
       ),
       description: (
         <>
-          <Box sx={{ pt: 1, width: "100%", margin: "0px auto" ,marginTop:'29px',overflow:'scroll',height:'490px'}}>
+          <Box
+            sx={{
+              pt: 1,
+              width: "100%",
+              margin: "0px auto",
+              marginTop: "29px",
+              overflowY: "scroll",
+              height: "490px",
+            }}
+            className="hideScroll"
+          >
             <StartSignUp handleNext={handleNext} />
           </Box>
         </>
@@ -1453,7 +1555,17 @@ function TextMobileStepper() {
       ),
       description: (
         <>
-          <Box sx={{ pt: 1, width: "100%", margin: "0px auto" ,marginTop:'29px',overflow:'scroll',height:'490px'}}>
+          <Box
+            sx={{
+              pt: 1,
+              width: "100%",
+              margin: "0px auto",
+              marginTop: "29px",
+              overflowY: "scroll",
+              height: "490px",
+            }}
+            className="hideScroll"
+          >
             <StartSchedule />
           </Box>
         </>
@@ -1465,98 +1577,97 @@ function TextMobileStepper() {
 
   return (
     <div
-    // className="stepContainer"
-    sx={{
-        maxWidth: '100%',
+      // className="stepContainer"
+      sx={{
+        maxWidth: "100%",
         flexGrow: 1,
         textAlign: "center",
         margin: "0px auto",
         // position:'fixed !important',
         // overflow:'scroll !important',
-        marginLeft:'auto',
-        marginRight:'auto',
-        width:'100%',
-        alignItems:'center',
-        justifyContent:'center',
-        height:'100%',
-        marginTop:'55%',
-        overflow:'hidden !important'
+        marginLeft: "auto",
+        marginRight: "auto",
+        width: "100%",
+        alignItems: "center",
+        justifyContent: "center",
+        height: "100%",
+        marginTop: "55%",
+        overflow: "hidden !important",
       }}
     >
-
-    <Box
-      // sx={{   position:'fixed',
-      //   overflow:'scroll', marginLeft: "-25%",}}
-      sx={{ overflow:'hidden !important'}}
-    >
-      <Paper
-        square
-        elevation={0}
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          height: 50,
-          backgroundColor:'#FFFBF0',
-          maxWidth: 1500,
-          margin: "0px auto",
-          boxShadow:'10px 5px 10px #eee'
-        }}
-      >
-        <Typography>{steps[activeStep].label}</Typography>
-      </Paper>
       <Box
-        sx={{
-          height: 455,
-          maxWidth: 1200,
-          width: "100%",
-          p: 2,
-          display: "flex",
-          justifyContent: "center",
-          margin: "0px auto",
-          // overflow:'scroll',
-          backgroundColor:'#FFFBF0'
-        }}
-      >             
-        {steps[activeStep].description}
+        // sx={{   position:'fixed',
+        //   overflow:'scroll', marginLeft: "-25%",}}
+        sx={{ overflow: "hidden !important" }}
+      >
+        <Paper
+          square
+          elevation={0}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            height: 50,
+            backgroundColor: "#FFFBF0",
+            maxWidth: 1500,
+            margin: "0px auto",
+            boxShadow: "10px 5px 10px #eee",
+          }}
+        >
+          <Typography>{steps[activeStep].label}</Typography>
+        </Paper>
+        <Box
+          sx={{
+            height: 455,
+            maxWidth: 1200,
+            width: "100%",
+            p: 2,
+            display: "flex",
+            justifyContent: "center",
+            margin: "0px auto",
+            // overflow:'scroll',
+            backgroundColor: "#FFFBF0",
+          }}
+        >
+          {steps[activeStep].description}
+        </Box>
+        <Box sx={{ pt: 16, backgroundColor: "#FFFBF0" }}>
+          <MobileStepper
+            variant="text"
+            sx={{ backgroundColor: "#FFFBF0", boxShadow: "10px 5px 10px #eee" }}
+            steps={maxSteps}
+            position="static"
+            activeStep={activeStep}
+            nextButton={
+              <Button
+                size="small"
+                onClick={handleNext}
+                disabled={activeStep === maxSteps - 1}
+              >
+                Next
+                {theme.direction === "rtl" ? (
+                  <KeyboardArrowLeft />
+                ) : (
+                  <KeyboardArrowRight />
+                )}
+              </Button>
+            }
+            backButton={
+              <Button
+                size="small"
+                onClick={handleBack}
+                disabled={activeStep === 0}
+              >
+                {theme.direction === "rtl" ? (
+                  <KeyboardArrowRight />
+                ) : (
+                  <KeyboardArrowLeft />
+                )}
+                Back
+              </Button>
+            }
+          />
+        </Box>
       </Box>
-      <Box sx={{ pt: 16, backgroundColor:'#FFFBF0' }}>
-        <MobileStepper
-          variant="text"
-          sx={{ backgroundColor:'#FFFBF0',boxShadow:'10px 5px 10px #eee'}}
-          steps={maxSteps}
-          position="static" 
-          activeStep={activeStep}
-          nextButton={
-            <Button
-              size="small"
-              onClick={handleNext}
-              disabled={activeStep === maxSteps - 1}
-            >
-              Next
-              {theme.direction === "rtl" ? (
-                <KeyboardArrowLeft />
-              ) : (
-                <KeyboardArrowRight />
-              )}
-            </Button>
-          }
-          backButton={
-            <Button
-              size="small"
-              onClick={handleBack}
-              disabled={activeStep === 0}
-            >
-              {theme.direction === "rtl" ? (
-                <KeyboardArrowRight />
-              ) : (
-                <KeyboardArrowLeft />
-              )}
-              Back
-            </Button>
-          }
-        />
-      </Box>
-    </Box>
     </div>
   );
 }

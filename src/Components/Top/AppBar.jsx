@@ -16,10 +16,10 @@ function CollapsibleExample() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" style={{backgroundColor:'#FFFBF0'}}>
           <Nav className="me-auto">
-            <Nav.Link href="">About</Nav.Link>
-            <Nav.Link href="">Skill</Nav.Link>
-            <Nav.Link href="">Process</Nav.Link>
-            <Nav.Link href="">Blog</Nav.Link>
+            <Nav.Link href="#aboutUs">About</Nav.Link>
+            <Nav.Link href="#skills">Skill</Nav.Link>
+            <Nav.Link href="#process">Process</Nav.Link>
+            <Nav.Link href="#blogs">Blog</Nav.Link>
           </Nav>
           <Nav>
             <Nav.Link eventKey={2}>

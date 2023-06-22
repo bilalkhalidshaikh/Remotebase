@@ -1422,6 +1422,22 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@formspree/core@^2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@formspree/core/-/core-2.8.1.tgz#020485c030deb2213526d24c4d87e86991a2ad74"
+  integrity sha512-MkMWcI8EnIIy3ryB3tdRynC134BTMVLzSq5i/ACrcD/F10tbSffOPOOVpQ/tz9BSrCuCyeBJShAwllfifz52zg==
+  dependencies:
+    "@stripe/stripe-js" "^1.35.0"
+
+"@formspree/react@^2.4.2":
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/@formspree/react/-/react-2.4.2.tgz#19d3cea54fad61c93310321cceaee75170fe9498"
+  integrity sha512-z7yAutzP8FgO4HY8y+OJGcjP6fvzUS4w9wVmlhXJWZRg5jFLPHWMl3CFGbIYruBha/xEP+3jZBjVnxaAVEgmbg==
+  dependencies:
+    "@formspree/core" "^2.8.1"
+    "@stripe/react-stripe-js" "^1.7.1"
+    "@stripe/stripe-js" "^1.35.0"
+
 "@humanwhocodes/config-array@^0.11.6":
   version "0.11.7"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.7.tgz#38aec044c6c828f6ed51d5d7ae3d9b9faf6dbb0f"
@@ -2152,6 +2168,18 @@
   integrity sha512-OAPJUAtgeINhh/TAlUID4QTs53Njm7xzddaVlEs/SXwgtiD1tW22zAB/W1wdqfrpmikgaWQ9Fw6Ws+hsiRm5Vg==
   dependencies:
     "@sinonjs/commons" "^1.7.0"
+
+"@stripe/react-stripe-js@^1.7.1":
+  version "1.16.5"
+  resolved "https://registry.yarnpkg.com/@stripe/react-stripe-js/-/react-stripe-js-1.16.5.tgz#51cf862b50ca91ae6193c77a5bec889e81047f10"
+  integrity sha512-lVPW3IfwdacyS22pP+nBB6/GNFRRhT/4jfgAK6T2guQmtzPwJV1DogiGGaBNhiKtSY18+yS8KlHSu+PvZNclvQ==
+  dependencies:
+    prop-types "^15.7.2"
+
+"@stripe/stripe-js@^1.35.0":
+  version "1.54.1"
+  resolved "https://registry.yarnpkg.com/@stripe/stripe-js/-/stripe-js-1.54.1.tgz#e298b80c2963d9e622ea355db6c35df48e08cd89"
+  integrity sha512-smEXPu1GKMcAj9g2luT16+oXfg2jAwyc68t2Dm5wdtYl3p8PqQaZEiI8tQmboaQAjgF8pIGma6byz1T1vgmpbA==
 
 "@surma/rollup-plugin-off-main-thread@^2.2.3":
   version "2.2.3"

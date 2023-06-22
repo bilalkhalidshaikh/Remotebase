@@ -11,6 +11,17 @@
     margin: 0;
     margin-bottom: 1rem;
   }
+  .hideScroll::-webkit-scrollbar {
+    width: 10px;
+    background-color: #FFFBF0;
+    box-shadow:  0 0 6px rgba(0, 0, 0, 0.3);
+
+  }
+  .hideScroll{
+    scrollbar-width: thin;
+    scrollbar-color: #6969dd #e0e0e0;
+    overflow-x: hidden;
+  }
 
   body {
     margin: 0;

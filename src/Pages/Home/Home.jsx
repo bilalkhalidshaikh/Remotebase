@@ -304,7 +304,7 @@ function Home() {
           </nav> */}
             </div>
             <div
-              id="aboutUs"
+
               className="styles__HeroStyled-sc-1osk9yq-0 jWgSPn"
               style={{ marginTop: "-80px", background: "#FFFBF0" }}
             >
@@ -1743,6 +1743,7 @@ function Home() {
               </div>
             </div>
             <div
+                          id="aboutUs"
               className="styles__AboutStyled-sc-snsgg8-0 htOhMv"
               style={{ background: "#FFFBF0 !important" }}
             >
@@ -3890,6 +3891,7 @@ function Home() {
             <div
               className="styles__PerksStyled-sc-1bujfel-0 fiInkc"
               style={{ background: "#FFFBF0 !important" }}
+              id="blogs"
             >
               <div className="styles__Container-sc-1bujfel-1 QDvIl">
                 <div className="styles__PerksGrid-sc-1bujfel-2 bmhvKO">
@@ -4523,7 +4525,7 @@ function Home() {
                         </span>
                       </a>
                       <a
-                        href="mailto:hello@leveluptechstudios.com"
+                        href="mailto:sales@leveluptechstudios.com"
                         className="styles__ContactUsnBtn-sc-1617iz2-7 jmJWCf aos-item"
                         data-aos="fade-up"
                         data-aos-duration={1000}
@@ -4752,7 +4754,7 @@ function Home() {
                       Process
                     </a>
                     <a
-                      href="/blog"
+                      href="#blogs"
                       className="styles__FooterMenuLink-sc-1xf49c1-5 eEpAmG"
                     >
                       Blog
