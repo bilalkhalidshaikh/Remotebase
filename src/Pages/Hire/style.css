@@ -408,6 +408,9 @@
   .skill_contain{
     margin-top: 20px;
   }
+  /* .hideScroll{
+    overflow: scroll !important;
+  } */
 }
 
 

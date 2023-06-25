@@ -12,54 +12,66 @@ import Grid from '@mui/material/Grid';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import dayjs from 'dayjs';
+// import dayjs from 'dayjs';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { StaticDatePicker } from '@mui/x-date-pickers/StaticDatePicker';
 import { useNavigate } from 'react-router-dom';
+import { useForm, ValidationError } from "@formspree/react";
+import { useCalendlyEventListener, InlineWidget } from "react-calendly";
 
 
 
-function Copyright(props) {
+
+const Stheme = createTheme();
+
+// function CustomizeDayPicker() {
+//     const [value, setValue] = React.useState(dayjs('2023-01-04'));
+//     const navigate = useNavigate();
+
+  
+//     return (
+//       <LocalizationProvider dateAdapter={AdapterDayjs}>
+//         <StaticDatePicker
+//         components={TextField}
+//           displayStaticWrapperAs="desktop"
+//           // value={value}
+//           onChange={async(newValue) => {
+//            await setValue(newValue);
+//             console.log(value.$d)
+//             navigate('/thankyou')
+
+//           }}
+//         id="data"
+//                 label="Date"
+//                 name="Selected Date for Call"
+//                 value={value.$d}
+//           renderInput={(params) => <TextField {...params} />}
+//           dayOfWeekFormatter={(day) => `${day}.`}
+//           toolbarFormat="ddd DD MMMM"
+//           showToolbar
+//         />
+//       </LocalizationProvider>
+//     );
+//   }
+function CustomizeDayPicker() {
+  useCalendlyEventListener({
+    onProfilePageViewed: () => console.log("onProfilePageViewed"),
+    onDateAndTimeSelected: () => console.log("onDateAndTimeSelected"),
+    onEventTypeViewed: () => console.log("onEventTypeViewed"),
+    onEventScheduled: (e) => console.log(e.data.payload),
+  });
   return (
-    <Typography variant="body2" color="text.secondary" align="center" {...props}>
-      {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
+    <div
+      // className="calendly-inline-widget"
+      style={{ minWidth: '320px', height: '630px' }}
+    >
+      <InlineWidget url="https://calendly.com/brianallenlevlup/30min?month=2023-06" />
+    </div>
   );
 }
 
-const theme = createTheme();
-
-function CustomizeDayPicker() {
-    const [value, setValue] = React.useState(dayjs('2023-01-04'));
-    const navigate = useNavigate();
-
-  
-    return (
-      <LocalizationProvider dateAdapter={AdapterDayjs}>
-        <StaticDatePicker
-          displayStaticWrapperAs="desktop"
-          value={value}
-          onChange={(newValue) => {
-            setValue(newValue);
-            navigate('/thankyou')
-
-          }}
-          renderInput={(params) => <TextField {...params} />}
-          dayOfWeekFormatter={(day) => `${day}.`}
-          toolbarFormat="ddd DD MMMM"
-          showToolbar
-        />
-      </LocalizationProvider>
-    );
-  }
-
-export default function StartSchedule() {
+ function StartSchedule() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -69,8 +81,12 @@ export default function StartSchedule() {
     });
   };
 
+  const [formstate, handleFormSubmit] = useForm("xdovqqqk");
+  if (formstate.succeeded) {
+    return <p>Thanks for joining!</p>;
+  }
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={Stheme}>
       <Grid container component="main" sx={{ height: '40vh' }}>
         <CssBaseline />
         <Grid item xs={12} sm={8} md={5} component={Paper} elevation={1} square>
@@ -83,10 +99,13 @@ export default function StartSchedule() {
               alignItems: 'center',
             }}
           >
-            <Typography component="h1" variant="h5">
-            Last step! set an easy schedule call with our Luts team ahead.
-            </Typography>
-          <Box>
+            {/* <Typography component="h1" variant="h5">
+            Last step! set an easy schedule call with our LUTS team ahead.
+            </Typography> */}
+          <Box
+          //  component={"form"} noValidate
+          //     onSubmit={handleFormSubmit}
+              sx={{ mt: 1 }}>
             <CustomizeDayPicker/>
           </Box>
           </Box>
@@ -110,3 +129,6 @@ export default function StartSchedule() {
     </ThemeProvider>
   );
 }
+
+
+export default StartSchedule

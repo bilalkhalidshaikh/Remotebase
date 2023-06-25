@@ -2947,7 +2947,7 @@ function Home() {
                   data-aos="fade-up"
                   data-aos-duration={1000}
                 >
-                  Why Organizations choose <span>Luts</span>
+                  Why Organizations choose <span>LUTS</span>
                 </h2>
                 <p
                   className="styles__ChoosePara-sc-waf4go-3 kBWZZg aos-item"

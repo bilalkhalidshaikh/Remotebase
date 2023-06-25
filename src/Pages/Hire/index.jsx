@@ -22,7 +22,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import { CardActionArea, CardActions, Stack } from "@mui/material";
-import StartSignUp from "../../Components/StartSignup/StartSignUp";
+import {StartSignUp} from "../../Components/StartSignup/StartSignUp";
 import StartSchedule from "../../Components/StartSchedule/StartSchedule";
 import "./style.css";
 import logo from "../../Images/logo.png";
@@ -1527,9 +1527,9 @@ function TextMobileStepper() {
               pt: 1,
               width: "100%",
               margin: "0px auto",
-              marginTop: "29px",
+              marginTop: "2px",
               overflowY: "scroll",
-              height: "490px",
+              height: "570px",  
             }}
             className="hideScroll"
           >
@@ -1556,17 +1556,19 @@ function TextMobileStepper() {
       description: (
         <>
           <Box
-            sx={{
+          sx={{
               pt: 1,
-              width: "100%",
+              // width: "100%",
               margin: "0px auto",
-              marginTop: "29px",
+              marginTop: "2px",
               overflowY: "scroll",
-              height: "490px",
+              width:"920px",
+              height: "570px",  
             }}
             className="hideScroll"
           >
             <StartSchedule />
+
           </Box>
         </>
       ),
