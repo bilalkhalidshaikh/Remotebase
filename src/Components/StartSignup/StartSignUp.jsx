@@ -263,7 +263,7 @@ function StartSignUp({ handleNext }) {
                 fullWidth
                 id="cname"
                 label="Company Name"
-                name="Company Name"
+                name="Contact Name"
                 autoComplete="cname"
                 autoFocus
               />
@@ -272,7 +272,7 @@ function StartSignUp({ handleNext }) {
                 fullWidth
                 id="name"
                 label="Contact Name"
-                name="Name"
+                name="Company Name"
                 autoComplete="name"
                 autoFocus
               />
