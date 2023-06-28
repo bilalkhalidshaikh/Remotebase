@@ -1048,6 +1048,16 @@ function TextMobileStepper() {
           </Box>
         </>
       ),
+      next:(
+        <>
+          Next
+          {theme.direction === "rtl" ? (
+                  <KeyboardArrowLeft />
+                ) : (
+                  <KeyboardArrowRight />
+                )}
+        </>
+      )
     },
     {
       label: (
@@ -1273,6 +1283,16 @@ function TextMobileStepper() {
           </Box>
         </>
       ),
+      next:(
+        <>
+          Next
+          {theme.direction === "rtl" ? (
+                  <KeyboardArrowLeft />
+                ) : (
+                  <KeyboardArrowRight />
+                )}
+        </>
+      )
     },
     {
       label: (
@@ -1504,6 +1524,16 @@ function TextMobileStepper() {
           </Box>
         </>
       ),
+      next:(
+        <>
+          Next
+          {theme.direction === "rtl" ? (
+                  <KeyboardArrowLeft />
+                ) : (
+                  <KeyboardArrowRight />
+                )}
+        </>
+      )
     },
     {
       label: (
@@ -1537,6 +1567,11 @@ function TextMobileStepper() {
           </Box>
         </>
       ),
+      next:(
+        <>
+           &emsp;
+        </>
+      )
     },
     {
       label: (
@@ -1572,6 +1607,11 @@ function TextMobileStepper() {
           </Box>
         </>
       ),
+      next:(
+        <>
+          &emsp;
+        </>
+      )
     },
   ];
 
@@ -1645,12 +1685,8 @@ function TextMobileStepper() {
                 onClick={handleNext}
                 disabled={activeStep === maxSteps - 1}
               >
-                Next
-                {theme.direction === "rtl" ? (
-                  <KeyboardArrowLeft />
-                ) : (
-                  <KeyboardArrowRight />
-                )}
+                 {steps[activeStep].next}
+               
               </Button>
             }
             backButton={
